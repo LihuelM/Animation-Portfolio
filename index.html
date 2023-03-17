@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -15,91 +16,129 @@
     <nav class="navbar">
       <span></span>
       <ul class="menu">
-        <li><a href="#">about me</a></li>
-        <li><a href="#">works</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="#aboutMe">acerca de mi</a></li>
+        <li><a href="#proyects">proyectos</a></li>
+        <li><a href="#">contacto</a></li>
       </ul>
       <div class="media">
-        <a href="#"><img src="./assets/github_icon.png" alt="boton-github"></a>
-        <a href="#"><img src="./assets/linkedin_icon.png" alt="boton-linkedin"></a>
-        <a href="#"><img src="./assets/instagram_icon.png" alt="boton-instagram"></a>
+        <a href="https://github.com/LihuelM"><img src="./assets/github_icon.png" alt="boton-github"></a>
+        <a href="https://www.linkedin.com/in/lihuel-muracciole/"><img src="./assets/linkedin_icon.png" alt="boton-linkedin"></a>
+        <a href="https://www.instagram.com/lii_muracciole/"><img src="./assets/instagram_icon.png" alt="boton-instagram"></a>
       </div>
     </nav>
   </header>
 
-  <section class="video-section">
-    <div class="video-container">
-      <video src="./assets/flower.mp4" autoplay loop muted></video>
-    </div>
-    <div class="img-container">
-      <img src="./assets/window.png" alt="window" class="img">
-    </div>
-  </section>
+  <div class="wrapper">
+    <section class="video-section">
+      <div class="video-container">
+        <video src="./assets/flower.mp4" autoplay loop muted></video>
+      </div>
+      <div class="img-container">
+        <img src="./assets/window.png" alt="window" class="img">
+      </div>
 
-  <section class="section">
-    <div class="boxes-container">
-      <div class="columns box1">
-        <div class="col col-1">
-          <img src="./assets/1.jpeg" alt="">
-          <img src="./assets/2.jpeg" alt="">
-        </div>
-        <div class="col-2">
-          <h1>Nombre del Proyecto</h1>
-          <span>Tecnologias</span>
-          <div class="line"></div>
-          <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quia maxime expedita excepturi fugiat aspernatur, vel magni asperiores alias adipisci minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+      <div class="text-content">
+        <div class="img-txt">
+          <div class="title bg left">
+            <span>Lihuel</span>
+          </div>
+          <div class="title sm left">
+            <span>Muracciole</span>
+          </div>
+          <div class="title bg right n">
+            <span>Frontend</span>
+          </div>
+          <div class="title sm right">
+            <span>Developer</span>
           </div>
         </div>
-        <div class="col col-3">
-          <img src="./assets/3.webp" alt="">
-          <img src="./assets/4.jpeg" alt="">
-          <img src="./assets/5.jpeg" alt="">
-        </div>
+        <p class="txt-bottom">Te invito a conocer mi trabajo</p>
       </div>
-      <div class="columns box2">
-        <div class="col col-1">
-          <img src="./assets/1.jpeg" alt="">
-          <img src="./assets/2.jpeg" alt="">
-        </div>
-        <div class="col-2">
-          <h1>Nombre del Proyecto</h1>
-          <span>Tecnologias</span>
-          <div class="line"></div>
-          <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quia maxime expedita excepturi fugiat aspernatur, vel magni asperiores alias adipisci minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+      <div class="v-container" id="aboutMe">
+        <div class="left-side">
+          <div class="tv">
+            <div class="bg">Hola!</div>
+            <div class="sm left-bottom">Soy</div>
+            <div class="bg bottom">Lihuel</div>
+          </div>
+          <div class="text-container">
+            <p>Soy de Argentina, estudié Ingeniería Industrial en la Universidad Tecnológica Nacional, trabajando en distintas áreas de logistica durante casi 10 años.</p>
+            <p>Actualmente soy aprendiz de desarrollo web de manera asíncrona. Mi interés por la programación comenzó hace algunos años, sin embargo, debido a la carga horaria que manejaba entre el trabajo y la universidad, no me dedicaba a ello. A fines de 2021 -el Ministerio de Desarrollo Argentino- lanzó un bootcamp de programación al cual no dude inscribirme, y desde allí decidí dar un giro en mi carrera, alejandome de todo aquello que conocía, lanzandome al mundo del desarrollo de software. Sin mas...</p>
+            <p class="sm">Bienvenidos a mi aventura!</p>
           </div>
         </div>
-        <div class="col col-3">
-          <img src="./assets/3.webp" alt="">
-          <img src="./assets/4.jpeg" alt="">
-          <img src="./assets/5.jpeg" alt="">
+        <div class="right-side">
+          <p>explorar proyectos <i class="fa-solid fa-arrow-right-long"></i></p>
         </div>
       </div>
-      <div class="columns box3">
-        <div class="col col-1">
-          <img src="./assets/1.jpeg" alt="">
-          <img src="./assets/2.jpeg" alt="">
-          <img src="./assets/2.jpeg" alt="">
-          <img src="./assets/2.jpeg" alt="">
-        </div>
-        <div class="col-2">
-          <h1>Nombre del Proyecto</h1>
-          <span>Tecnologias</span>
-          <div class="line"></div>
-          <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quia maxime expedita excepturi fugiat aspernatur, vel magni asperiores alias adipisci minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+    </section>
+  
+    <section class="section" id="proyects">
+      <div class="boxes-container">
+        <div class="columns box1">
+          <div class="col col-1">
+            <img src="./assets/1.jpeg" alt="">
+            <img src="./assets/2.jpeg" alt="">
+          </div>
+          <div class="col-2">
+            <h1>Nombre del Proyecto</h1>
+            <span>Tecnologias</span>
+            <div class="line"></div>
+            <div class="text-box">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quia maxime expedita excepturi fugiat aspernatur, vel magni asperiores alias adipisci minus.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            </div>
+          </div>
+          <div class="col col-3">
+            <img src="./assets/3.webp" alt="">
+            <img src="./assets/4.jpeg" alt="">
+            <img src="./assets/5.jpeg" alt="">
           </div>
         </div>
-        <div class="col col-3">
-          <img src="./assets/3.webp" alt="">
+        <div class="columns box2">
+          <div class="col col-1">
+            <img src="./assets/1.jpeg" alt="">
+            <img src="./assets/2.jpeg" alt="">
+          </div>
+          <div class="col-2">
+            <h1>Nombre del Proyecto</h1>
+            <span>Tecnologias</span>
+            <div class="line"></div>
+            <div class="text-box">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quia maxime expedita excepturi fugiat aspernatur, vel magni asperiores alias adipisci minus.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            </div>
+          </div>
+          <div class="col col-3">
+            <img src="./assets/3.webp" alt="">
+            <img src="./assets/4.jpeg" alt="">
+            <img src="./assets/5.jpeg" alt="">
+          </div>
+        </div>
+        <div class="columns box3">
+          <div class="col col-1">
+            <img src="./assets/1.jpeg" alt="">
+            <img src="./assets/2.jpeg" alt="">
+            <img src="./assets/2.jpeg" alt="">
+            <img src="./assets/2.jpeg" alt="">
+          </div>
+          <div class="col-2">
+            <h1>Nombre del Proyecto</h1>
+            <span>Tecnologias</span>
+            <div class="line"></div>
+            <div class="text-box">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quia maxime expedita excepturi fugiat aspernatur, vel magni asperiores alias adipisci minus.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            </div>
+          </div>
+          <div class="col col-3">
+            <img src="./assets/3.webp" alt="">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <footer>
     <div class="logo"><a href="#">LM.Dev</a></div>
@@ -111,4 +150,10 @@
   </footer>
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="./script.js"></script>
+
 </html>

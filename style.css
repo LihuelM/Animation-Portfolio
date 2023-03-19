@@ -175,7 +175,6 @@ section {
 .text-container p:nth-child(3){
   font-family: w;
   text-align: end;
-  /* ver como alinear a la derecha */
 }
 .right-side {
   margin: auto;
@@ -220,31 +219,38 @@ section {
 .col-1 {
   display: flex;
   gap: 1.5rem;
-  flex: 5;
+  flex: 1;
 }
 .col-3 {
   display: flex;
-  gap: 2.5rem;
-  justify-content: center;
+  gap: 2rem;
+  justify-content: end;
   flex-wrap: wrap;
   flex: 4;
 }
 
 /* Text proyects */
-.col-2 {
+.col-2, .col-4 {
   margin: auto;
   flex: 1.5;
 }
-.col-2 h1{
+.col-2 h2, .col-4 h2{
   font-family: w;
-  font-size: 100px;
+  font-size: 50px;
   text-transform: capitalize;
   position: absolute;
-  top: 50px;
   left: 47%;
   z-index: 100;
 }
-.col-2 span {
+.col-2 h2{
+  left: 20%;
+  top: 50px;
+}
+.col-4 h2{
+  left: 68%;
+  top: 55px;
+}
+.col-2 span, .col-4 span {
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -266,28 +272,25 @@ section {
 /* BOX1: Img proyects */
 .box1 .col-1 img:first-child{
   width: 150px;
-  height: 180px;
+  height: 300px;
   transform: translateY(-30px);
 }
 .box1 .col-1 img:nth-child(2){
-  width: 380px;
-  height: 430px;
+  width: 250px;
+  height: 180px;
 }
 .box1 .col-3 img:first-child{
-  width: 320px;
-  height: 170px;
+  height: 320px;
+  width: 170px;
 }
 .box1 .col-3 img:nth-child(2){
   width: 150px;
-  height: 180px;
-}
-.box1 .col-3 img:nth-child(3){
-  width: 200px;
-  height: 200px;
+  height: 130px;
+  transform: translateY(150px);
 }
 
 /* BOX1: Text proyects */
-.box1 .col-2 h1{
+.box1 .col-2 h2{
   top: 0;
 }
 

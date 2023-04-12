@@ -294,7 +294,7 @@ section {
   margin: 2rem 0;
 }
 .text-box p{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.9;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
@@ -308,7 +308,7 @@ section {
   transform: translateX(10rem);
 }
 .box1 .col-4 h2{
-  left: 70%;
+  left: 64%;
   top: 30%;
 }
 .box1 .col-4{
@@ -316,27 +316,26 @@ section {
 }
 .box1 .col-3 {
   justify-content: flex-end;
-  flex: 4;
-  transform: translate(-8rem, 0rem);
+  flex: 2.5;
 }
 
-.box1 .col-1 img:first-child{
-  width: 180px;
-  height: 350px;
-  transform: translateY(90px);
+.box1 .col-1 img:first-child {
+  width: 20rem;
+  height: 40rem;
+  transform: translateY(15rem);
 }
-.box1 .col-1 img:nth-child(2){
-  width: 180px;
-  height: 400px;
+.box1 .col-1 img:nth-child(2) {
+  width: 20rem;
+  height: 44rem;
 }
-.box1 .col-3 img:first-child{
-  height: 320px;
-  width: 170px;
+.box1 .col-3 img:first-child {
+  height: 40rem;
+  width: 22rem;
 }
-.box1 .col-3 img:nth-child(2){
-  width: 150px;
-  height: 130px;
-  transform: translateY(150px);
+.box1 .col-3 img:nth-child(2) {
+  width: 18rem;
+  height: 15rem;
+  transform: translateY(15rem);
 }
 
 /* BOX2*/
@@ -350,11 +349,12 @@ section {
 }
 .box2 .col-3 {
   justify-content: center;
-  flex: 1.5;
+  flex: 2;
+  gap: 3rem;
 }
 .box2 .col-4 h2 {
-  left: 15%;
-  top: -70%;
+  left: 55%;
+  top: 0%;
 }
 .box2 .col-1 img:first-child {
   width: 38rem;
@@ -379,6 +379,9 @@ section {
 }
 
 /* BOX3 */
+.box3{
+  margin-top: 15rem;
+}
 .box3 .col-1{
   display: flex;
   flex-wrap: wrap;
@@ -388,29 +391,35 @@ section {
   flex: 1;
 }
 .box3 .col-0 h2{
-  top: -150px;
+  top: -18rem;
 }
-.box3 .col-2 h2{
-  left: 50%;
-  top: 85px;
+.box2 .col-2 .text-box{
+  width: 31rem;
 }
-.box3 .col-1 img:first-child{
-  width: 350px;
-  height: 250px;
-  transform: translate(25px, -40px);
+.box3 .col-2 h2 {
+  left: 51%;
+  top: 20%;
 }
-.box3 .col-1 img:nth-child(2){
-  height: 270px;
-  width: 210px;
-  margin-left: 80px;
-  align-self: center;
-  transform: translateY(-30px);
+.box3 .col-1 img:first-child {
+  width: 43rem;
+  height: 30em;
+  transform: translate(-1rem, -3rem);
 }
-
+.box3 .col-1 img:nth-child(2) {
+  height: 27rem;
+  width: 21rem;
+  margin-left: 8rem;
+  transform: translateY(-3rem);
+}
 .box3 .col-3 img:nth-child(1){
-  width: 330px;
-  height: 260px;
-  transform: translateX(60px);
+  width: 40rem;
+  height: 32rem;
+  transform: translate(9rem, -5rem);
+}
+.box3 .col-3 img:nth-child(2){
+  width: 30rem;
+  height: 25rem;
+  transform: translate(4rem, -5rem);
 }
 
 /* Footer */
@@ -423,7 +432,7 @@ footer{
 }
 .logo{
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 3rem;
   cursor: pointer;
   font-family: w;
 }

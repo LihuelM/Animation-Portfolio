@@ -59,7 +59,7 @@ ScrollTrigger.create({
   trigger:'.wrapper',
   start:"top top",
   end:"+=600",
-  scrub:1,
+  scrub:0.2,
   pin:true,
   ease:"ease"
 })
@@ -73,7 +73,7 @@ gsap.utils.toArray('.col').forEach(image=>{
     x:-50,
     scrollTrigger:{
       trigger:image,
-      start:"10%",
+      start:"5%",
       stagger:{
         amount:.4
       }

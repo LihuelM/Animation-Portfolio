@@ -1,3 +1,5 @@
+// ANIMACIONES
+
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
@@ -15,7 +17,6 @@ gsap.to('.img-container',{
     pin:true
   }
 });
-
 gsap.to('.right' ,{
   autoAlpha:0,
   x:500,
@@ -32,7 +33,6 @@ gsap.to('.left' ,{
     start:1
   }
 })
-
 gsap.to('.txt-bottom',{
   autoAlpha:0,
   letterSpacing:-10,
@@ -59,7 +59,7 @@ ScrollTrigger.create({
   trigger:'.wrapper',
   start:"top top",
   end:"+=600",
-  scrub:0.2,
+  scrub:3,
   pin:true,
   ease:"ease"
 })
@@ -73,7 +73,7 @@ gsap.utils.toArray('.col').forEach(image=>{
     x:-50,
     scrollTrigger:{
       trigger:image,
-      start:"5%",
+      start:"-35%",
       stagger:{
         amount:.4
       }
@@ -92,3 +92,16 @@ timeline.from('.title span' ,{
   opacity:0,
   duration:3
 })
+
+// FORMULARIO
+
+const $form = document.querySelector('#form')
+const $buttonMailto = document.querySelector('#trucazo')
+
+  $form.addEventListener('submit', handleSubmit)
+  function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    $buttonMailto.setAttribute('href', `mailto:muracciole.al@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
+    $buttonMailto.click()
+  }

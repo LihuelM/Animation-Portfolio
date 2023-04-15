@@ -73,7 +73,7 @@ gsap.utils.toArray('.col').forEach(image=>{
     x:-50,
     scrollTrigger:{
       trigger:image,
-      start:"-35%",
+      start:"-50%",
       stagger:{
         amount:.4
       }

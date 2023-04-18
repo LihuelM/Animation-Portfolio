@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 @font-face {
   font-family: w;
@@ -33,7 +32,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, .1);
   z-index: 1000;
 }
-.navbar span {
+.navbar .animation-nav {
   position: absolute;
   bottom: 0;
   height: 0.2rem;
@@ -75,7 +74,6 @@ section {
   flex-shrink: 0;
   overflow: hidden;
 }
-
 
 /* Home */
 .video-section video {
@@ -164,68 +162,6 @@ section {
   left: -0.75rem;
 } */
 
-@media (max-width: 768px) {
-  .left {
-    left: -26%;
-    top: -37%;
-  }
-  .right {
-    top: 95%;
-    left: 55%;
-  }
-  .bg {
-    font-size: 5rem;
-  }
-  .sm {
-    font-size: 4rem;
-    height: 4rem;
-  }
-  .title {
-    width: 25rem;
-    height: 6rem;
-  }
-  .text-content p {
-    transform: translateY(26rem);
-    text-align: center;
-    letter-spacing: .7rem;
-    font-size: 1.3rem;
-    font-weight: 300;
-  }
-  .v-container{
-    display: flex;
-    flex-direction: column;
-  }
-  .right-side{
-    width: 10rem;
-    height: 10rem;
-    transform: translate(10rem, 5rem);
-  }
-  .left-side{
-    justify-content: flex-end;
-    gap: 4rem;
-  }
-  .text-container p {
-    padding: 1rem;
-  }
-  .text-container p:nth-child(2) {
-    text-align: center;
-    font-size: 4rem;
-    line-height: .7;
-  }
-  /* About Me */
-  #aboutMe .aboutCont{
-    flex-direction: column;
-  }
-  #aboutMe .aboutText{
-    width: 100%;
-  }
-  #aboutMe .aboutText p{
-    width: 90%;
-  }
-  /* Contact */
-}
-
-
 /* About me */
 .v-container {
   position: absolute;
@@ -309,7 +245,7 @@ section {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
+  gap: 5rem;
   
 }
 #aboutMe .contenedor_imagen {
@@ -318,8 +254,8 @@ section {
   align-items: flex-start;
 }
 #aboutMe .imgMe {
-  width: 300px;
-  height: 300px;
+  width: 30rem;
+  height: 30rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -343,18 +279,18 @@ section {
 }
 
 .bgIconExp .imgIcon {
-  height: 100px;
+  height: 10rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
 .contIconosExp {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 2fr));
   justify-items: center;
-  padding-top: 20px;
-  gap: 31px;
-  padding: 20px;
-  border-radius: 20px;
+  padding-top: 2rem;
+  gap: 3.1rem;
+  padding: 2rem;
+  border-radius: 2rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -362,16 +298,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
-  padding: 16px;
+  width: 10rem;
+  height: 10rem;
+  padding: 1.6rem;
   flex-direction: column;
 }
 hr.divider {
   height: 0.2rem;
   margin: 1.5rem auto;
   opacity: 1;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 hr {
   margin: 1rem 0;
@@ -390,7 +326,7 @@ hr {
 }
 @media (min-width: 1280px){
   #aboutMe img {
-    width: 300px;
+    width: 30rem;
     height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -423,12 +359,6 @@ hr {
     padding: 0 !important;
   }
 } */
-
-
-
-
-
-
 
 /* proyects */
 .section {
@@ -634,12 +564,12 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 .text-contact{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2rem 0;
 }
 .text-contact p:nth-child(1) {
   font-size: 1.8rem;
@@ -655,6 +585,7 @@ hr {
   font-size: 2rem;
   letter-spacing: .6rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .form {
@@ -721,3 +652,183 @@ footer{
   font-family: w;
 }
 
+/* Prueba navbar mobile */
+.nav-menu-mobile {
+  display: none;
+}
+.nav-menu-mobile a {
+  color: whitesmoke;
+}
+/* Menu burguer*/
+.burguer {
+  min-width: 2.6rem;
+  min-height: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5rem;
+  cursor: pointer;
+}
+.burguer .line-burguer {
+  border-radius: .5rem;
+  background-color: whitesmoke;
+  opacity: 0.6;
+  width: 100%;
+  height: .2rem;
+  transition: all 300ms ease-out;
+}
+/* Menu burguer active */
+.burguer.active .line1 {
+  opacity: 0;
+  width: 0;
+}
+.burguer.active .line2 {
+  transform: translateY(2.5px) rotate(45deg);
+}
+.burguer.active .line3 {
+  transform: translateY(-2px) rotate(-45deg);
+}
+/* Menu desplegable */
+.nav-menu-mobile div:nth-child(2){
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #141414;
+  opacity: .3;
+  width: 100vw;
+  height: 0px;
+  position: absolute;
+  z-index: 3;
+  top: 5.5rem;
+  left: 0px;
+  transition: all 250ms ease-out;
+}
+.nav-menu-mobile div.open:nth-child(2) {
+  height: 15vh;
+}
+.open a{
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .menu {
+    display: none;
+  }
+.nav-menu-mobile {
+    display: flex;
+    width: auto;
+  }
+  .navbar .media {
+  gap: 0.5rem;
+}
+  .title {
+    width: 22rem;
+    height: 4rem;
+}
+  .left {
+    left: -26%;
+    top: -50%;
+  }
+  .right {
+    top: 106%;
+    left: 51%;
+  }
+  .bg {
+    font-size: 4.5rem;
+  }
+  .sm {
+    font-size: 3.5rem;
+  }
+  .text-content p {
+    transform: translateY(23rem);
+    text-align: center;
+    letter-spacing: .7rem ;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+  .v-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .tv {
+    padding: 2rem;
+  }
+  .right-side{
+    width: 10rem ;
+    height: 10rem ;
+    transform: translate(10rem, 5rem) ;
+  }
+  .left-side{
+    padding: 0.5rem ;
+    gap: 1rem ; 
+  }
+  .bottom{
+    transform: translate(16px, 33px);
+  }
+  .text-container p {
+    transform: translate(0px, -1.5rem);
+  }
+  .text-container  {
+    padding: 1rem;
+  }
+  .text-container p:nth-child(2) {
+    text-align: center;
+    font-size: 4rem ;
+    padding-top: 1rem;
+    line-height: .7;
+  }
+  /* About Me */
+  #aboutMe .aboutCont{
+    flex-direction: column ;
+  }
+  #aboutMe .aboutText{
+    width: 100% ;
+  }
+  #aboutMe .aboutText p{
+    width: 90% ;
+  }
+  #aboutMe h2{
+    margin: 4rem 0 ;
+  }
+  .contIconosExp{
+    gap: 1.5rem ;
+    padding: 1rem ;
+    width: 100% ;
+  }
+  hr.divider {
+    margin-bottom: 2rem;
+  }
+  /* Contact */
+  .contact{
+    justify-content: center;
+  }
+  .contact h3 {
+    font-size: 4rem;
+  }
+  .text-contact p:nth-child(1){
+    max-width: 70%;
+    line-height: 1.2;
+  }
+  .text-contact p:nth-child(2){
+    letter-spacing: 0.2rem;
+    width: 80%;
+  }
+  .form {
+    width: 80%;
+    height: 60%;
+  }
+  .form-tittle{
+    font-size: 4rem;
+    text-align: center;
+  }
+  .form label {
+    margin: 1rem;
+    text-align: center;
+}
+}

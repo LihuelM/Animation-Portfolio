@@ -105,3 +105,12 @@ const $buttonMailto = document.querySelector('#trucazo')
     $buttonMailto.setAttribute('href', `mailto:muracciole.al@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
     $buttonMailto.click()
   }
+
+// Navbar responsive
+const burguer = document.querySelector('.burguer');
+const menu = document.querySelector('.nav-menu-mobile div:nth-child(2)');
+
+burguer.addEventListener('click', e=> {
+    burguer.classList.toggle('active');
+    menu.classList.toggle('open');
+})

@@ -64,22 +64,59 @@ ScrollTrigger.create({
   ease:"ease"
 })
 
-gsap.utils.toArray('.col').forEach(image=>{
-  gsap.fromTo(image,{
-    opacity:.3,
-    x:0
-  },{
-    opacity:1,
-    x:-50,
-    scrollTrigger:{
-      trigger:image,
-      start:"-50%",
-      stagger:{
-        amount:.4
+// gsap.utils.toArray('.col').forEach(image=>{
+//   gsap.fromTo(image,{
+//     opacity:.3,
+//     x:0
+//   },{
+//     opacity:1,
+//     x:-50,
+//     scrollTrigger:{
+//       trigger:image,
+//       start:"-50%",
+//       stagger:{
+//         amount:.4
+//       }
+//     }
+//   })
+// })
+
+// Ejecutar código solo en pantallas de escritorio
+if (window.innerWidth > 1024) {
+  gsap.utils.toArray('.col').forEach(image=>{
+    gsap.fromTo(image,{
+      opacity:.3,
+      x:0
+    },{
+      opacity:1,
+      x:-50,
+      scrollTrigger:{
+        trigger:image,
+        start:"-50%",
+        stagger:{
+          amount:.4
+        }
       }
-    }
+    })
   })
-})
+} else {
+  gsap.utils.toArray('.col').forEach(image=>{
+    gsap.fromTo(image,{
+      opacity:.3,
+      x:0
+    },{
+      opacity:1,
+      x:0,
+      scrollTrigger:{
+        trigger:image,
+        start:"-50%",
+        stagger:{
+          amount:.4
+        }
+      }
+    })
+  })
+}
 
 const timeline = gsap.timeline();
 

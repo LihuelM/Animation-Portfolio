@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
-  <link rel="stylesheet" href="mediaQuerys.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/mediaQuerys.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -34,9 +34,9 @@
         </div>
     </div>
       <div class="media">
-        <a href="https://github.com/LihuelM"><img src="./assets/github_icon.png" alt="boton-github"></a>
-        <a href="https://www.linkedin.com/in/lihuel-muracciole/"><img src="./assets/linkedin_icon.png" alt="boton-linkedin"></a>
-        <a href="https://www.instagram.com/lii_muracciole/"><img src="./assets/instagram_icon.png" alt="boton-instagram"></a>
+        <a href="https://github.com/LihuelM"><img src="./assets/icons/github_icon.png" alt="boton-github"></a>
+        <a href="https://www.linkedin.com/in/lihuel-muracciole/"><img src="./assets/icons/linkedin_icon.png" alt="boton-linkedin"></a>
+        <a href="https://www.instagram.com/lii_muracciole/"><img src="./assets/icons/instagram_icon.png" alt="boton-instagram"></a>
       </div>
     </nav>
   </header>
@@ -44,7 +44,7 @@
   <div class="wrapper">
     <section class="video-section">
       <div class="video-container">
-        <video src="./assets/flower.mp4" autoplay loop muted></video>
+        <video src="./assets/video/flower.mp4" autoplay loop muted></video>
       </div>
       <div class="img-container">
         <img src="./assets/window.png" alt="window" class="img">
@@ -175,18 +175,18 @@
         <p>Notion</p>
       </div>
       <div class="bgIconExp">
-        <img style="width: 91px" src="./assets/canva_logo.png">
+        <img style="width: 91px" src="./assets/icons/canva_logo.png">
         <p>Canvas</p>
       </div>
       <div class="bgIconExp">
-        <img style="width: 91px" src="./assets/sap.png">
+        <img style="width: 91px" src="./assets/icons/sap.png">
         <p>SAP</p>
       </div>
     </div>
 
     <hr class="divider">
 
-    <a class="btnContact" download="CV_Lihuel_Muracciole.pdf" href="CV_Muracciole_ Lihuel.pdf">
+    <a class="btnContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/CV_Muracciole_ Lihuel.pdf">
       Descargar CV <i class="fa-solid fa-download"></i>
       <span class="overlay"></span>
     </a>
@@ -254,25 +254,26 @@
       <div class="columns box3">
         <div class="col col-1">
           <img src="./assets/ConferenciaHawaii.JPG" alt="">
-          <img src="./assets/ConferenciaHawaii2.JPG" alt="">
+          <img src="./assets/ConferenciaHawaii3.JPG" alt="">
         </div>
         <div class="col-2">
           <h2>Conferencia en Hawaii</h2>
-          <span>HTML, CSS, Bootstrap</span>
-          <div class="line"></div>
+          <span style="top: -7rem;">HTML, CSS, Bootstrap</span>
+          <div class="line" style="transform: translate(0rem, -6rem);"></div>
           <div class="text-box">
             <p>Landing pages, creada como modelo para promover un evento social. Este proyecto fue desarrollado desde 0 utilizando HTML5, CSS3 y Bootstrap, el cual cuenta con una interfaz responsiva y totalmente interactiva.</p>
             <a class='btn-box' href="https://lihuelm.github.io/Conferencia_Hawaii/">Ver mas...</a>
           </div>
         </div>
         <div class="col col-3">
+          <img src="./assets/MyPuppyApp.JPG" alt="">
           <img src="./assets/MyPuppyApp2.JPG" alt="">
-            <img src="./assets/MyPuppyApp.JPG" alt="">
           </div>
         <div class="col-4">
           <h2>My puppy App</h2>
-          <span>HTML, CSS, JS, API</span>
-          <div class="line"></div>
+          <span style="left: 11%;
+          top: -3rem;">HTML, CSS, JS, API</span>
+          <div class="line" style="transform: translate(3rem, -2rem);"></div>
           <div class="text-box">
             <p>Este proyecto, se realiza a partir del primer curso de una saga de cursos de consumo de API con JavaScript. En él, se trabajan con los fundamentos del consumo de API, haciendo mis primeras solicitudes asíncronas usando fetch.</p>
             <a class='btn-box' href="https://lihuelm.github.io/MyPuppyApp_ConsumoAPI/">Ver mas...</a>
@@ -303,9 +304,9 @@
   <footer>
     <div class="logo"><a href="#">LM.Dev</a></div>
     <div class="media">
-      <a href="#"><img src="./assets/github_icon.png" alt="boton-github"></a>
-      <a href="#"><img src="./assets/linkedin_icon.png" alt="boton-linkedin"></a>
-      <a href="#"><img src="./assets/instagram_icon.png" alt="boton-instagram"></a>
+      <a href="#"><img src="./assets/icons/github_icon.png" alt="boton-github"></a>
+      <a href="#"><img src="./assets/icons/linkedin_icon.png" alt="boton-linkedin"></a>
+      <a href="#"><img src="./assets/icons/instagram_icon.png" alt="boton-instagram"></a>
     </div>
   </footer>
 

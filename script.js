@@ -86,10 +86,10 @@ if (window.innerWidth > 1024) {
   gsap.utils.toArray('.col').forEach(image=>{
     gsap.fromTo(image,{
       opacity:.3,
-      x:0
+      x:20
     },{
       opacity:1,
-      x:-50,
+      x:-10,
       scrollTrigger:{
         trigger:image,
         start:"-50%",

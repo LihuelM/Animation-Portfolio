@@ -383,16 +383,19 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 95%;
+  width: 100%;
   margin: 5rem auto;
   gap: 8rem;
 }
 .columns {
   display: grid;
-  grid-template-columns: .9fr 0.7fr 1fr 0.7fr;
+  grid-template-columns: .9fr 0.8fr 0.8fr 0.6fr;
   align-items: center;
   justify-items: center;
-  height: 90%;
+  max-height: 50rem;
+  width: 90vw;
+  margin: auto;
+  gap: 2rem;
 }
 .col img {
   object-fit: cover;
@@ -404,18 +407,24 @@ hr {
   height: 80%;
 }
 .col-3{
+  width: 75%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 75%;
+  justify-content: center;
 }
 .col-2, .col-4{
   display: flex;
   flex-direction: column;
-  max-width: 27rem;
   height: 80%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+.col-2{
+  width: 75%;
+}
+.col-4{
+  width: 95%;
 }
 .col-2 h2, .col-4 h2{
   text-transform: capitalize;
@@ -453,21 +462,19 @@ hr {
 }
 /* Imagenes */
 .box1 .col-1 img:first-child {
-  width: 35rem;
-  height: 28rem;
+  width: 100%;
 }
 .box1 .col-1 img:nth-child(2) {
-  width: 35rem;
-  height: 22rem;
+  width: 100%;
   position: relative;
   z-index: 5;
   transform: translate(3rem, -2rem);
 }
 .box1 .col-3 img:first-child {
-  height: 46rem;
+  width: 90%;
 }
 .box1 .col-3 img:nth-child(2) {
-  height: 35rem;
+  width: 70%;
   position: relative;
   z-index: 5;
   transform: translate(-3rem, 0rem);
@@ -484,30 +491,28 @@ hr {
   transform: translate(0rem, -19rem);
 }
 .box2 .col-3 img:first-child {
-  height: 46rem;
+  width: 90%;
 }
 .box2 .col-3 img:nth-child(2) {
-  height: 35rem;
+  width: 70%;
   position: relative;
   z-index: 5;
   transform: translate(-3rem, 0rem);
 }
 .box3 .col-1 img:first-child {
-  width: 35rem;
-  height: 28rem;
+  width: 100%;
   z-index: 5;
 }
 .box3 .col-1 img:nth-child(2) {
-  width: 35rem;
-  height: 22rem;
+  width: 100%;
   position: relative;
   transform: translate(3rem, -2rem);
 }
 .box3 .col-3 img:first-child {
-  height: 46rem;
+  width: 90%;
 }
 .box3 .col-3 img:nth-child(2) {
-  height: 35rem;
+  width: 70%;
   position: relative;
   z-index: 5;
   transform: translate(-3rem, 0rem);

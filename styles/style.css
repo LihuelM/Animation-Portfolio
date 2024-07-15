@@ -300,6 +300,11 @@ section {
   font-size: 5rem;
   margin: 6rem 0rem;
 }
+#aboutMe h3{
+  font-family: w;
+  font-size: 4rem;
+  margin: 6rem 0rem;
+}
 #aboutMe .aboutCont {
   display: flex;
   justify-content: center;
@@ -338,12 +343,18 @@ section {
   font-weight: 300;
 }
 
+#aboutMe .skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
 .bgIconExp .imgIcon {
   height: 10rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.contIconosExp {
+/* .contIconosExp {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(6rem, 2fr));
   justify-items: center;
@@ -374,7 +385,7 @@ hr {
   color: inherit;
   border: 0;
   opacity: 0.25;
-}
+} */
 
 /* proyects */
 .boxes-container {

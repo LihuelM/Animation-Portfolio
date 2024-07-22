@@ -320,7 +320,7 @@ section {
 }
 #aboutMe .imgMe {
   width: 30rem;
-  /* height: 30rem; */
+  /* height: 35rem;  */
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -335,9 +335,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: justify;
   width: 40vw;
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   opacity: .8;
   font-weight: 300;

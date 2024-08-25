@@ -131,9 +131,8 @@ timeline.from('.title span' ,{
 })
 
 // FORMULARIO
-
-const $form = document.querySelector('#form')
-const $buttonMailto = document.querySelector('#trucazo')
+  const $form = document.querySelector('#form')
+  const $buttonMailto = document.querySelector('#trucazo')
 
   $form.addEventListener('submit', handleSubmit)
   function handleSubmit(event) {
@@ -144,10 +143,41 @@ const $buttonMailto = document.querySelector('#trucazo')
   }
 
 // Navbar responsive
-const burguer = document.querySelector('.burguer');
-const menu = document.querySelector('.nav-menu-mobile div:nth-child(2)');
+  const burguer = document.querySelector('.burguer');
+  const menu = document.querySelector('.nav-menu-mobile div:nth-child(2)');
 
-burguer.addEventListener('click', e=> {
-    burguer.classList.toggle('active');
-    menu.classList.toggle('open');
-})
+  burguer.addEventListener('click', e=> {
+      burguer.classList.toggle('active');
+      menu.classList.toggle('open');
+  })
+
+// Slider Proyects
+  const swiper = new Swiper('.slider-wrapper', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 30,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+
+    }
+  });

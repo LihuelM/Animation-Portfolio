@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/mediaQuerys.css">
   <link rel="stylesheet" href="./styles/skills.css">
+  <link rel="stylesheet" href="./styles/proyects.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -159,92 +162,72 @@
     </a>
   </section>
 
-  <section id="proyects" class="boxes-container">
-    <div class="columns box1">
-      <div class="col col-1">
-        <img src="./assets/badia.jpg" alt="">
-        <img src="./assets/Badia2.JPG" alt="">
-      </div>
-      <div class="col-2">
-        <h2>Badia</h2>
-        <span >FIGMA, WORDPRESS, ELEMENTOR </span>
-        <div class="line" ></div>
-        <div class="text-box">
-          <p>Sitio Web de Badia Argentina, realizado para promoción y marketing de la marca. Creado con WordPress, jutno con el uso de Elementor. Se utilizan como modelos las paginas oficiales de otros paises.</p>
-          <a class='btn-box' href="https://badiaspices.com.ar/">Ver mas...</a>
-        </div>
-      </div>
-      <div class="col col-3">
-          <img src="./assets/MovieApp.jpg" alt="">
-          <img src="./assets/MovieApp2.JPG" alt="">
-      </div>
-      <div class="col-4">
-        <h2>MovieApp</h2>
-        <span>HTML, CSS, JS, API</span>
-        <div class="line"></div>
-        <div class="text-box">
-          <p>Proyecto en versión mobile, hasta el momento. Visualiza una interfaz que se comunica con una API pública para consultar películas y mostrarlas en el frontend de manera dinámica.</p>
-          <a class='btn-box' href="https://lihuelm.github.io/MovieApp/">Ver mas...</a>
-        </div>
-      </div>
-    </div>
-    <div class="columns box2">
-      <div class="col col-1">
-        <img src="./assets/MyPuppyApp.JPG" alt="">
-        <img src="./assets/MyPuppyApp2.JPG" alt="">
-      </div>
-      <div class="col-2">
-        <h2>My puppy App</h2>
-        <span >HTML, CSS, JS, API</span>
-        <div class="line" ></div>
-        <div class="text-box">
-          <p>Este proyecto, se realiza a partir del primer curso de una saga de cursos de consumo de API con JavaScript. En él, se trabajan con los fundamentos del consumo de API, haciendo mis primeras solicitudes asíncronas usando fetch.</p>
-          <a class='btn-box' href="https://lihuelm.github.io/MyPuppyApp_ConsumoAPI/">Ver mas...</a>
-      </div>
-    </div>
-      <div class="col col-3">
-        <img src="./assets/TodoApp1.jpeg" alt="">
-        <img src="./assets/TodoApp2.jpeg" alt="">
-      </div>
-      <div class="col-4">
-        <h2>ToDoApp</h2>
-        <span>REACT, JS, HTML, CSS</span>
-        <div class="line"></div>
-        <div class="text-box">
-          <p>App realizada como desafío del primer curso de la saga de React.js, en el se desarrollan funcionalidades fundamentales cómo: componentes, manejo del estado, de efectos, de eventos, comunicación con props y ReactContext, creación de custom hooks, persistencia con localStorage.</p>
-          <a class='btn-box' href="https://lihuelm.github.io/ToDo_Webapp/">Ver mas...</a>
-        </div>
-      </div>
-      
-    </div>
-    <div class="columns box3">
-      <div class="col col-1">
-          <img src="./assets/ConferenciaHawaii.JPG" alt="">
-          <img src="./assets/ConferenciaHawaii3.JPG" alt="">
-      </div>
-      <div class="col-2">
-          <h2>Conferencia en Hawaii</h2>
-          <span >HTML, CSS, Bootstrap</span>
-          <div class="line" ></div>
-          <div class="text-box">
-            <p>Landing pages, creada como modelo para promover un evento social. Este proyecto fue desarrollado desde 0 utilizando HTML5, CSS3 y Bootstrap, el cual cuenta con una interfaz responsiva y totalmente interactiva.</p>
-            <a class='btn-box' href="https://lihuelm.github.io/Conferencia_Hawaii/">Ver mas...</a>
+  <section id="proyects" class="sectionProyects">
+    <div class="containerProyects swiper">
+      <div class="slider-wrapper">
+        <div class="card-list swiper-wrapper">
+
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-fullkom.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">Fullkom</h2>
+            <p class="proyect-description">Sitio Web actual de la compañia Fullkom. Realizado con html, css, js y librerias de ambos. Totalmente responsivo, con animaciones.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://fullkom.com/">Ver mas...</a>
+            </button>
           </div>
-      </div>
-      <div class="col col-3">
-        <img src="./assets/Batatabit1.JPG" alt="">
-        <img src="./assets/Batatabit3.JPG" alt="">
-      </div>
-      <div class="col-4">
-        <h2>BatataBit</h2>
-        <span >FIGMA, HTML y CSS</span>
-        <div class="line" ></div>
-        <div class="text-box">
-          <p>Landig page informativo. Diseñado para adaptarse a cualquier dispositivo de los usuarios, utilizando fundamentos de mobile first. Este proyecto parte, desde su prototipo en Figma</p>
-          <a class='btn-box' href="https://lihuelm.github.io/Batatabit_MobileFirst/">Ver mas...</a>
-      </div>
+          
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-moviApp.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">MovieApp</h2>
+            <p class="proyect-description">App Mobile, de una interfaz que se comunica con una API pública, para consultar películas y mostrarlas en el frontend de manera dinámica.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://lihuelm.github.io/MovieApp/">Ver mas...</a>
+            </button>
+          </div>
+          
+          <div class="card-item swiper-slide">
+              <img src="assets/proyectos/proyect-tiendas.png" alt="proyect-image" class="proyect-image">
+              <h2 class="proyect-name">Tiendas Ecommerce</h2>
+              <p class="proyect-description">Desarrollo y optimización de tiendas en línea, para marcas como Hasbro, Victorinox, Tena, Bouden -entre otras- utilizando plataformas como VTEX y PrestaShop.</p>
+              <button class="view-more">
+                <a class='btn-view-more' href="https://www.victorinoxstore.pe/">Ver mas...</a>
+              </button>
+            </div>
+          
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-batataBit.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">BatataBit</h2>
+            <p class="proyect-description">Se trata de una landig page informativa, diseñada para adaptarse a cualquier dispositivo de los usuarios, utilizando fundamentos de mobile first.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://lihuelm.github.io/Batatabit_MobileFirst/">Ver mas...</a>
+            </button>
+          </div>
+
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-CFC.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">Colegio de Fonoudiólogos de Córdoba</h2>
+            <p class="proyect-description">Sitio Web actual del Colegio de Fonoaudiólogos de Córdoba. Desarrollado con WordPress, proyecto freelance de migración de datos del sitio original y rebranding del mismo.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://cfc-cordoba.org/">Ver mas...</a>
+            </button>
+          </div>
+
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-ToDoApp.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">ToDoApp</h2>
+            <p class="proyect-description">App Mobile, desarollado con React.js -en él- se trabajan funcionalidades básicas cómo: manejo del estado, de efectos, de eventos, comunicación con props y ReactContext, custom hooks, persistencia con localStorage.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://lihuelm.github.io/ToDo_Webapp/">Ver mas...</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
       </div>
     </div>
+
   </section>
 
   <section id="contact" class="contact" >
@@ -275,6 +258,8 @@
   </footer>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>

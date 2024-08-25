@@ -8,6 +8,10 @@
   <title>Portfolio Website</title>
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/mediaQuerys.css">
+  <link rel="stylesheet" href="./styles/skills.css">
+  <link rel="stylesheet" href="./styles/proyects.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -83,7 +87,7 @@
             <div class="bg bottom">Lihuel</div>
           </div>
           <div class="text-container">
-            <p>Soy de Argentina, estudié Ingeniería Industrial en la Universidad Tecnológica Nacional. <br> Pasé casi una década trabajando en diversas áreas de Supply Chain, en industrias internacionales. Pero, como dicen... "la vida comienza al final de tu zona de confort", así que decidí dar un giro en mi carrera, alejandome de todo aquello que conocía, lanzandome al mundo del desarrollo de software.. Sin mas...</p>
+            <p>Con una formación en Ingeniería Industrial y casi una década de experiencia en diversas áreas de la cadena de suministro en industrias internacionales, decidí explorar nuevos horizontes y cambiar de rumbo. Siguiendo el lema 'la vida comienza al final de tu zona de confort', me lancé al mundo del desarrollo de software. Desde entonces, me he especializado en desarrollo frontend, combinando mi sólida base técnica con un enfoque creativo para construir experiencias de usuario atractivas y funcionales... Sin mas...</p>
             <p class="sm">Bienvenidos a mi aventura!</p>
           </div>
         </div>
@@ -95,194 +99,140 @@
     <h2>Acerca de mí</h2>
     <div class="aboutCont">
       <div class="contenedor_imagen">
-        <img class="imgMe" src="./assets/Foto_perfil3.jpeg" alt="Lihuel Muracciole">
+        <img class="imgMe" src="./assets/foto-perfil.png" alt="Lihuel Muracciole">
       </div>
       <div class="aboutText">
-        <p>Actualmente, estoy enfocando en mi aprendizaje de desarrollo web de manera asíncrona, y aunque todavía soy un aprendiz, estoy emocionada de poder compartir mi progreso con ustedes a través de mi portfolio. <br>
-        <br> Me gusta explorar nuevas tecnologías y desafiarme a mí misma con proyectos creativos. Me encanta colaborar con otros desarrolladores y aprender de ellos, por lo que no dudes en ponerte en contacto conmigo si estás interesado en colaborar en algún proyecto.
+        <p>Actualmente trabajo en una empresa especializada en la gestión integral de eCommerce, 
+          manejando plataformas como VTEX, PrestaShop, WordPress, entre otras.<br> 
+        <br> Mi rol principal hoy, es brindar soporte técnico en el frontend, donde desarrollo y 
+          optimizo la parte visual, la estructural de sitios y aplicaciones web, mejorando la 
+          usabilidad y la experiencia del usuario.
+          Desde la gestión, ejecución y validación de requerimientos en cada proyecto, me aseguro 
+          que se desarrollen de manera eficiente y cumplan con los estándares de calidad en las etapas frontend.<br>
+        <br> Mi experiencia incluye el desarrollo de interfaces de usuario (UI),la integración de APIs, 
+          la construcción de estructuras lógicas para aplicaciones web, con la finalidad de ofrecer 
+          soluciones innovadoras y funcionales.<br>
+        <br>Cada proyecto trae nuevos desafíos y oportunidades, lo que me impulsa a seguir explorando. 
+          Estoy entusiasmada por seguir creciendo y ver lo que el futuro me depara en este campo. <br> 
         </p>
       </div>
     </div>
-
-    <h2>Skills</h2>
-    <div class="contIconosExp">
-      <div class="bgIconExp">
-        <img class="imgIcon" src="https://img.icons8.com/color/70/000000/html-5.png">
-        <p>Html</p>
+    
+    <div class="skills">
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="outer-orbit">
+            <div class="icon" data-tooltip="WordPress"><img src="./assets/icons/skillsAndTools/iconSkills-wordpress.svg" alt="WordPress"></div>
+            <div class="icon" data-tooltip="VTEX"><img src="./assets/icons/skillsAndTools/iconSkills-vtex.svg" alt="vtex"></div>
+            <div class="icon" data-tooltip="Prestashop"><img src="./assets/icons/skillsAndTools/iconSkills-prestashop.svg" alt="Prestashop"></div>
+            <div class="icon" data-tooltip="Bootstrap"><img src="./assets/icons/skillsAndTools/iconSkills-bootstrap.svg" alt="bootstrap"></div>
+            <div class="icon" data-tooltip="PUG"><img src="./assets/icons/skillsAndTools/iconSkills-pug.svg" alt="pug"></div>
+            <div class="inner-orbit">
+                <div class="icon" data-tooltip="HTML"><img src="./assets/icons/skillsAndTools/iconSkills-html.svg" alt="HTML"></div>
+                <div class="icon" data-tooltip="CSS"><img src="./assets/icons/skillsAndTools/iconSkills-css.svg" alt="CSS"></div>
+                <div class="icon" data-tooltip="JavaScript"><img src="./assets/icons/skillsAndTools/iconSkills-js.svg" alt="JavaScript"></div>
+                <div class="icon" data-tooltip="React"><img src="./assets/icons/skillsAndTools/iconSkills-react.svg" alt="React"></div>
+                <div class="icon" data-tooltip="SASS"><img src="./assets/icons/skillsAndTools/iconSkills-sass.svg" alt="sass"></div>
+            </div>
+        </div>
       </div>
-      <div class="bgIconExp">
-        <img class="imgIcon" src="https://img.icons8.com/color/70/000000/css3.png">
-        <p>Css</p>
+  
+      <div class="container">
+        <h3>Tools</h3>
+        <div class="outer-orbit">
+          <div class="icon" data-tooltip="WordPress"><img src="./assets/icons/skillsAndTools/iconSkills-wordpress.svg" alt="WordPress"></div>
+          <div class="icon big" data-tooltip="Figma"><img src="./assets/icons/skillsAndTools/iconSkills-figma.svg" alt="Figma"></div>
+          <div class="icon med" data-tooltip="Notion"><img src="./assets/icons/skillsAndTools/iconSkills-notion.svg" alt="Notion"></div>
+          <div class="icon med" data-tooltip="Trello"><img src="./assets/icons/skillsAndTools/iconSkills-trello.svg" alt="trello"></div>
+          <div class="icon" data-tooltip="Jira"><img src="./assets/icons/skillsAndTools/iconSkills-jira.svg" alt="jira"></div>
+          <div class="inner-orbit">
+              <div class="icon" data-tooltip="NPM"><img src="./assets/icons/skillsAndTools/iconSkills-npm.svg" alt="npm"></div>
+              <div class="icon" data-tooltip="GIT"><img src="./assets/icons/skillsAndTools/iconSkills-git.svg" alt="git"></div>
+              <div class="icon" data-tooltip="GitHub"><img src="./assets/icons/skillsAndTools/iconSkills-github.svg" alt="github"></div>
+              <div class="icon med" data-tooltip="Sourcetree"><img src="./assets/icons/skillsAndTools/iconSkills-sourcetree.svg" alt="sourcetree"></div>
+              <div class="icon" data-tooltip="Elementor"><img src="./assets/icons/skillsAndTools/iconSkills-elementor.svg" alt="elementor"></div>
+          </div>
       </div>
-      <div class="bgIconExp">
-        <img class="imgIcon" src="https://img.icons8.com/color/75/000000/javascript.png">
-        <p>Javascript</p>
-      </div>
-      <div class="bgIconExp">
-        <img class="imgIcon" style="width: 71px" src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png">
-        <p>React</p>
-      </div>
-      <div class="bgIconExp">
-        <img class="imgIcon" src="https://img.icons8.com/color/70/000000/sass.png">
-        <p>Sass</p>
-      </div>
-      <div class="bgIconExp">
-        <img class="imgIcon" style="width: 71px" src="https://cdn1.iconfinder.com/data/icons/dog-breed-minimal-gradient/512/Pug.png">
-        <p>PUG</p>
-      </div>
-      <div class="bgIconExp">
-        <img class="imgIcon" src="https://img.icons8.com/color/70/000000/bootstrap.png">
-        <p>Bootstrap</p>
-      </div>
-      <div class="bgIconExp">
-        <img class="imgIcon" style="width: 61px" src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_wordpress-256.png">
-        <p>WordPress</p>
-      </div>
-      <div class="bgIconExp">
-        <img class="imgIcon" style="width: 61px" src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/512/elementor.png">
-        <p>Elementor</p>
       </div>
     </div>
 
-    <h2>Tools</h2>
-    <div class="contIconosExp">
-      <div class="bgIconExp">
-        <img src="https://img.icons8.com/color/70/000000/git.png">
-        <p>Git</p>
-      </div>
-      <div class="bgIconExp">
-        <img class="bgIconExp" src="https://parente-portfolio.vercel.app/_next/static/media/github.94abc3c8.svg">
-        <p>GitHub</p>
-      </div>
-      <div class="bgIconExp">
-        <img style="width: 71px" src="https://parente-portfolio.vercel.app/_next/static/media/npm.ef97023b.svg">
-        <p>NPM</p>
-      </div>
-      <div class="bgIconExp">
-        <img style="width: 71px" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/atlassian_jira_logo_icon_170511.png">
-        <p>Jira</p>
-      </div>
-      <div class="bgIconExp">
-        <img style="width: 71px" src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo.png">
-        <p>FIGMA</p>
-      </div>
-      <div class="bgIconExp">
-        <img style="width: 61px" src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Trello-256.png">
-        <p>Trello</p>
-      </div>
-      <div class="bgIconExp">
-        <img style="width: 61px" src="https://cdn3.iconfinder.com/data/icons/social-media-pack-12/512/Notion-512.png">
-        <p>Notion</p>
-      </div>
-      <div class="bgIconExp">
-        <img style="width: 91px" src="./assets/icons/canva_logo.png">
-        <p>Canvas</p>
-      </div>
-      <div class="bgIconExp">
-        <img style="width: 91px" src="./assets/icons/sap.png">
-        <p>SAP</p>
-      </div>
-    </div>
-
-    <hr class="divider">
-
-    <a class="btnContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/CV_Muracciole_ Lihuel.pdf">
+    <a class="btnContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/CV-Muracciole,Lihuel.pdf">
       Descargar CV <i class="fa-solid fa-download"></i>
       <span class="overlay"></span>
     </a>
   </section>
 
-  <section id="proyects" class="boxes-container">
-    <div class="columns box1">
-      <div class="col col-1">
-        <img src="./assets/badia.jpg" alt="">
-        <img src="./assets/Badia2.JPG" alt="">
-      </div>
-      <div class="col-2">
-        <h2>Badia</h2>
-        <span >FIGMA, WORDPRESS, ELEMENTOR </span>
-        <div class="line" ></div>
-        <div class="text-box">
-          <p>Sitio Web de Badia Argentina, realizado para promoción y marketing de la marca. Creado con WordPress, jutno con el uso de Elementor. Se utilizan como modelos las paginas oficiales de otros paises.</p>
-          <a class='btn-box' href="https://badiaspices.com.ar/">Ver mas...</a>
-        </div>
-      </div>
-      <div class="col col-3">
-          <img src="./assets/MovieApp.jpg" alt="">
-          <img src="./assets/MovieApp2.JPG" alt="">
-      </div>
-      <div class="col-4">
-        <h2>MovieApp</h2>
-        <span>HTML, CSS, JS, API</span>
-        <div class="line"></div>
-        <div class="text-box">
-          <p>Proyecto en versión mobile, hasta el momento. Visualiza una interfaz que se comunica con una API pública para consultar películas y mostrarlas en el frontend de manera dinámica.</p>
-          <a class='btn-box' href="https://lihuelm.github.io/MovieApp/">Ver mas...</a>
-        </div>
-      </div>
-    </div>
-    <div class="columns box2">
-      <div class="col col-1">
-        <img src="./assets/MyPuppyApp.JPG" alt="">
-        <img src="./assets/MyPuppyApp2.JPG" alt="">
-      </div>
-      <div class="col-2">
-        <h2>My puppy App</h2>
-        <span >HTML, CSS, JS, API</span>
-        <div class="line" ></div>
-        <div class="text-box">
-          <p>Este proyecto, se realiza a partir del primer curso de una saga de cursos de consumo de API con JavaScript. En él, se trabajan con los fundamentos del consumo de API, haciendo mis primeras solicitudes asíncronas usando fetch.</p>
-          <a class='btn-box' href="https://lihuelm.github.io/MyPuppyApp_ConsumoAPI/">Ver mas...</a>
-      </div>
-    </div>
-      <div class="col col-3">
-        <img src="./assets/TodoApp1.jpeg" alt="">
-        <img src="./assets/TodoApp2.jpeg" alt="">
-      </div>
-      <div class="col-4">
-        <h2>ToDoApp</h2>
-        <span>REACT, JS, HTML, CSS</span>
-        <div class="line"></div>
-        <div class="text-box">
-          <p>App realizada como desafío del primer curso de la saga de React.js, en el se desarrollan funcionalidades fundamentales cómo: componentes, manejo del estado, de efectos, de eventos, comunicación con props y ReactContext, creación de custom hooks, persistencia con localStorage.</p>
-          <a class='btn-box' href="https://lihuelm.github.io/ToDo_Webapp/">Ver mas...</a>
-        </div>
-      </div>
-      
-    </div>
-    <div class="columns box3">
-      <div class="col col-1">
-          <img src="./assets/ConferenciaHawaii.JPG" alt="">
-          <img src="./assets/ConferenciaHawaii3.JPG" alt="">
-      </div>
-      <div class="col-2">
-          <h2>Conferencia en Hawaii</h2>
-          <span >HTML, CSS, Bootstrap</span>
-          <div class="line" ></div>
-          <div class="text-box">
-            <p>Landing pages, creada como modelo para promover un evento social. Este proyecto fue desarrollado desde 0 utilizando HTML5, CSS3 y Bootstrap, el cual cuenta con una interfaz responsiva y totalmente interactiva.</p>
-            <a class='btn-box' href="https://lihuelm.github.io/Conferencia_Hawaii/">Ver mas...</a>
+  <section id="proyects" class="sectionProyects">
+    <div class="containerProyects swiper">
+      <div class="slider-wrapper">
+        <div class="card-list swiper-wrapper">
+
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-fullkom.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">Fullkom</h2>
+            <p class="proyect-description">Sitio Web actual de la compañia Fullkom. Realizado con html, css, js y librerias de ambos. Totalmente responsivo, con animaciones.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://fullkom.com/">Ver mas...</a>
+            </button>
           </div>
-      </div>
-      <div class="col col-3">
-        <img src="./assets/Batatabit1.JPG" alt="">
-        <img src="./assets/Batatabit3.JPG" alt="">
-      </div>
-      <div class="col-4">
-        <h2>BatataBit</h2>
-        <span >FIGMA, HTML y CSS</span>
-        <div class="line" ></div>
-        <div class="text-box">
-          <p>Landig page informativo. Diseñado para adaptarse a cualquier dispositivo de los usuarios, utilizando fundamentos de mobile first. Este proyecto parte, desde su prototipo en Figma</p>
-          <a class='btn-box' href="https://lihuelm.github.io/Batatabit_MobileFirst/">Ver mas...</a>
-      </div>
+          
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-moviApp.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">MovieApp</h2>
+            <p class="proyect-description">App Mobile, de una interfaz que se comunica con una API pública, para consultar películas y mostrarlas en el frontend de manera dinámica.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://lihuelm.github.io/MovieApp/">Ver mas...</a>
+            </button>
+          </div>
+          
+          <div class="card-item swiper-slide">
+              <img src="assets/proyectos/proyect-tiendas.png" alt="proyect-image" class="proyect-image">
+              <h2 class="proyect-name">Tiendas Ecommerce</h2>
+              <p class="proyect-description">Desarrollo y optimización de tiendas en línea, para marcas como Hasbro, Victorinox, Tena, Bouden -entre otras- utilizando plataformas como VTEX y PrestaShop.</p>
+              <button class="view-more">
+                <a class='btn-view-more' href="https://www.victorinoxstore.pe/">Ver mas...</a>
+              </button>
+            </div>
+          
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-batataBit.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">BatataBit</h2>
+            <p class="proyect-description">Se trata de una landig page informativa, diseñada para adaptarse a cualquier dispositivo de los usuarios, utilizando fundamentos de mobile first.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://lihuelm.github.io/Batatabit_MobileFirst/">Ver mas...</a>
+            </button>
+          </div>
+
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-CFC.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">Colegio de Fonoudiólogos de Córdoba</h2>
+            <p class="proyect-description">Sitio Web actual del Colegio de Fonoaudiólogos de Córdoba. Desarrollado con WordPress, proyecto freelance de migración de datos del sitio original y rebranding del mismo.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://cfc-cordoba.org/">Ver mas...</a>
+            </button>
+          </div>
+
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-ToDoApp.png" alt="proyect-image" class="proyect-image">
+            <h2 class="proyect-name">ToDoApp</h2>
+            <p class="proyect-description">App Mobile, desarollado con React.js -en él- se trabajan funcionalidades básicas cómo: manejo del estado, de efectos, de eventos, comunicación con props y ReactContext, custom hooks, persistencia con localStorage.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://lihuelm.github.io/ToDo_Webapp/">Ver mas...</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
       </div>
     </div>
+
   </section>
 
   <section id="contact" class="contact" >
     <div class="text-contact">
-      <p>Estoy muy emocionada de lo que el futuro me depara en este campo y espero poder compartir mi viaje contigo. <br> Gracias por visitar mi portfolio...</p>
+      <p>Gracias por tu recorrido...</p>
       <p>¡Espero que lo hayas disfrutado tanto como yo!</p>
     </div>
     <form id="form" action="" class="form">
@@ -308,6 +258,8 @@
   </footer>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>

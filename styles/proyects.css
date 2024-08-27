@@ -1,6 +1,11 @@
-
+#proyects h2{
+    font-family: w;
+    font-size: 5rem;
+    margin: 6rem 0rem 4rem;
+}
 .sectionProyects{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -23,7 +28,7 @@
     justify-content: center;
     border-radius: 8px;
     backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.09);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .card-list .card-item .proyect-image{
@@ -34,6 +39,13 @@
     padding: .4rem;
     border-radius: 8px;
     background-color: #000;
+}
+.card-list .card-item .proyect-name {
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
 }
 .card-list .card-item .proyect-description {
     font-size: 1.5rem;
@@ -47,18 +59,18 @@
     padding: 1rem 3.5rem;
     border-radius: 6px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #cdd2da;
     border: 1px solid transparent;
     transition: 0.2s ease;
 }
 
 .card-list .card-item .view-more:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.09);
     border: 1px solid #fff;
 }
 
 .card-list .card-item .view-more:hover .btn-view-more {
-    color: #fff;
+    color: #cdd2da;
 }
 
 .btn-view-more{
@@ -68,13 +80,13 @@
 }
 
 .slider-wrapper .swiper-pagination-bullet {
-    background-color: #FFF;
+    background-color: #cdd2da;
     height: 1.5rem;
     width: 1.5rem;
 }
 
 .slider-wrapper .swiper-slide-button{
-    color: #fff;
+    color: #cdd2da;
     margin-top: -5rem;
     transition: 0.2s ease;
 }

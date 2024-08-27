@@ -1,0 +1,144 @@
+#contact h2{
+    font-family: w;
+    font-size: 5rem;
+    margin: 6rem 0rem 2rem;
+}
+.sectionContact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .text-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+ }
+ .text-contact p:nth-child(1) {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    opacity: .8;
+    font-weight: 300;
+    max-width: 60%;
+    text-align: center;
+ }
+ .text-contact p:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .6rem;
+    font-weight: 300;
+    text-align: center;
+ }
+  
+.containerContact{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 4rem;
+  margin: 0 7rem 5.5rem;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 90%;
+}
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  height: 32rem;
+}
+.contact-inputs{
+  width: 40rem;
+  height: 4rem;
+  border-radius: 8px;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: .8rem;
+  padding: 2rem;
+}
+.contact-inputs:focus {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.contact-inputs::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.contact-left textarea{
+    height: 14rem;
+    padding-top: 1.5rem;
+    border-radius: .8rem;
+}
+.contact-btn {
+    padding: 1rem 3.5rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    background-color: #cdd2da;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+    font-size: 1.25rem;
+    color: #141414;
+    font-weight: 500;
+}
+.contact-btn:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid #cdd2da;
+    color: #cdd2da;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 26rem;
+}
+.contact-item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25rem;
+    padding: 1rem 3rem;
+    border-radius: .8rem;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.contact-item:hover,
+.contact-inputs:hover{
+    background-color: #cdd2da;
+}
+.contact-item:hover .iconContact{
+    color: #141414;
+}
+.contact-item:hover img.gh {
+    content: url('/assets/icons/icon-github-negro.svg'); 
+    opacity: 0.9;
+}
+
+.contact-item:hover img.ln {
+    content: url('/assets/icons/icon-linkedin-negro.svg');
+    opacity: 0.9;
+}
+
+.contact-item:hover img.cv {
+    content: url('/assets/icons/icon-descarga-negro.svg');
+    opacity: 0.7;
+}
+.iconContact-redes{
+    padding: 1rem;
+    height: 5rem;
+    opacity: 0.7;
+}
+.iconContact-redes.ln{
+    height: 5.5rem;
+}
+.iconContact-redes.cv{
+    margin-left: .5rem;
+    opacity: 0.6;
+}
+.iconContact{
+    color: #cdd2da;
+    font-weight: 300;
+    font-size: 1.7rem;
+}

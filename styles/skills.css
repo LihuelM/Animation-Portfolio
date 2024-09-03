@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-#aboutMe .container h3 {
+.container h3 {
     position: absolute;
     top: 38%;
     left: 50%;

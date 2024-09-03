@@ -64,23 +64,6 @@ ScrollTrigger.create({
   ease:"ease"
 })
 
-// gsap.utils.toArray('.col').forEach(image=>{
-//   gsap.fromTo(image,{
-//     opacity:.3,
-//     x:0
-//   },{
-//     opacity:1,
-//     x:-50,
-//     scrollTrigger:{
-//       trigger:image,
-//       start:"-50%",
-//       stagger:{
-//         amount:.4
-//       }
-//     }
-//   })
-// })
-
 // Ejecutar código solo en pantallas de escritorio
 if (window.innerWidth > 1024) {
   gsap.utils.toArray('.col').forEach(image=>{
@@ -130,20 +113,8 @@ timeline.from('.title span' ,{
   duration:3
 })
 
-// FORMULARIO
-  const $form = document.querySelector('#form')
-  const $buttonMailto = document.querySelector('#trucazo')
-
-  $form.addEventListener('submit', handleSubmit)
-  function handleSubmit(event) {
-    event.preventDefault()
-    const form = new FormData(this)
-    $buttonMailto.setAttribute('href', `mailto:muracciole.al@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
-    $buttonMailto.click()
-  }
-
 // Navbar responsive
-  const burguer = document.querySelector('.burguer');
+const burguer = document.querySelector('.burguer');
   const menu = document.querySelector('.nav-menu-mobile div:nth-child(2)');
 
   burguer.addEventListener('click', e=> {
@@ -181,5 +152,3 @@ timeline.from('.title span' ,{
 
     }
   });
-
-  //Form

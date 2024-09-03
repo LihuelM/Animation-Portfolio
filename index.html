@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/mediaQuerys.css">
   <link rel="stylesheet" href="./styles/skills.css">
   <link rel="stylesheet" href="./styles/proyects.css">
   <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/mediaQuerys.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -39,9 +39,9 @@
         </div>
     </div>
       <div class="media">
-        <a href="https://github.com/LihuelM"><img src="./assets/icons/github_icon.png" alt="boton-github"></a>
-        <a href="https://www.linkedin.com/in/lihuel-muracciole/"><img src="./assets/icons/linkedin_icon.png" alt="boton-linkedin"></a>
-        <a href="https://www.instagram.com/lii_muracciole/"><img src="./assets/icons/instagram_icon.png" alt="boton-instagram"></a>
+        <a href="https://github.com/LihuelM"><img class="icon-redes gh" src="./assets/icons/icon-github-blanco.svg" alt="boton-github"></a>
+      <a href="https://www.linkedin.com/in/lihuel-muracciole/"><img class="icon-redes ln" src="./assets/icons/icon-linkedin-blanco.svg" alt="boton-linkedin"></a>
+      <a href="https://www.instagram.com/lii_muracciole/"><img class="icon-redes ig" src="./assets/icons/icon-instagram-blanco.svg" alt="boton-instagram"></a>
       </div>
     </nav>
   </header>
@@ -70,10 +70,6 @@
             <span>Developer</span>
           </div>
         </div>
-        <!-- <div class="left-side-circle">
-          <p>scrolling</p>
-          <i class="fa-solid fa-arrow-down-long slide-bottom"></i>
-        </div> -->
         <p class="txt-bottom">Te invito a conocer mi trabajo</p>
       </div>
 
@@ -100,7 +96,7 @@
   </div>
 
   <section id="aboutMe">
-    <h2>Acerca de mí</h2>
+    <h2 class="title-aboutMe">Acerca de mí</h2>
     <div class="aboutCont">
       <div class="contenedor_imagen">
         <img class="imgMe" src="./assets/foto-perfil.png" alt="Lihuel Muracciole">
@@ -122,6 +118,7 @@
       </div>
     </div>
     
+    <h2 class="title-skills">Lenguajes y Herramientas</h2>
     <div class="skills">
       <div class="container">
         <h3>Skills</h3>
@@ -161,61 +158,72 @@
     </div>
   </section>
 
-  <section id="proyects" class="sectionProyects">
-    <h2>Últimos Proyectos</h2>
-    <div class="containerProyects swiper">
+  <section id="proyects">
+    <h2 class="title-proyects">Últimos Proyectos</h2>
+    <!-- <h2>Últimos Proyectos</h2> -->
+    <div class="sectionProyects">
+      <div class="containerProyects swiper">
       <div class="slider-wrapper">
         <div class="card-list swiper-wrapper">
 
           <div class="card-item swiper-slide">
             <img src="assets/proyectos/proyect-fullkom.png" alt="proyect-image" class="proyect-image">
             <h3 class="proyect-name">Fullkom</h3>
-            <p class="proyect-description">Sitio Web actual de la compañia Fullkom. Realizado con html, css, js y librerias de ambos. Totalmente responsivo, con animaciones.</p>
+            <p class="proyect-description">Desarrollo del sitio web corporativo para Fullkom con HTML, CSS, y JS. Totalmente responsivo, con animaciones avanzadas que elevan la experiencia del usuario.</p>
             <button class="view-more">
               <a class='btn-view-more' href="https://fullkom.com/">Ver mas...</a>
             </button>
           </div>
           
           <div class="card-item swiper-slide">
-            <img src="assets/proyectos/proyect-moviApp.png" alt="proyect-image" class="proyect-image">
-            <h3 class="proyect-name">MovieApp</h3>
-            <p class="proyect-description">App Mobile, de una interfaz que se comunica con una API pública, para consultar películas y mostrarlas en el frontend de manera dinámica.</p>
+            <img src="assets/proyectos/proyect-tiendas.png" alt="proyect-image" class="proyect-image">
+            <h3 class="proyect-name">Tiendas Ecommerce</h3>
+            <p class="proyect-description">Desarrollo y optimización de tiendas en línea, para marcas como Hasbro, Victorinox, Tena, Bouden -entre otras- utilizando plataformas como VTEX y PrestaShop.</p>
             <button class="view-more">
-              <a class='btn-view-more' href="https://lihuelm.github.io/MovieApp/">Ver mas...</a>
+              <a class='btn-view-more' href="https://www.victorinoxstore.pe/">Ver mas...</a>
             </button>
           </div>
           
           <div class="card-item swiper-slide">
-              <img src="assets/proyectos/proyect-tiendas.png" alt="proyect-image" class="proyect-image">
-              <h3 class="proyect-name">Tiendas Ecommerce</h3>
-              <p class="proyect-description">Desarrollo y optimización de tiendas en línea, para marcas como Hasbro, Victorinox, Tena, Bouden -entre otras- utilizando plataformas como VTEX y PrestaShop.</p>
-              <button class="view-more">
-                <a class='btn-view-more' href="https://www.victorinoxstore.pe/">Ver mas...</a>
-              </button>
-            </div>
+            <img src="assets/proyectos/proyect-CFC.png" alt="proyect-image" class="proyect-image">
+            <h3 class="proyect-name">Colegio de Fonoudiólogos de Córdoba</h3>
+            <p class="proyect-description">Rediseño completo del sitio web institucional y migración de datos a la plataforma WordPress, mejorando la usabilidad y la accesibilidad para usuarios y administradores.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://cfc-cordoba.org/">Ver mas...</a>
+            </button>
+          </div>
+          
+          <div class="card-item swiper-slide">
+            <img src="assets/proyectos/proyect-asesoramientosMura.png" alt="proyect-image" class="proyect-image">
+            <h3 class="proyect-name">AsesoramientosMura</h3>
+            <p class="proyect-description">Diseño y desarrollo de un sitio web responsivo para una empresa de asesoramientos, optimizado para SEO y rendimiento en cualquier dispositivo.</p>
+            <button class="view-more">
+              <a class='btn-view-more' href="https://lihuelm.github.io/asesoramientosMura/">Ver mas...</a>
+            </button>
+          </div>
           
           <div class="card-item swiper-slide">
             <img src="assets/proyectos/proyect-batataBit.png" alt="proyect-image" class="proyect-image">
             <h3 class="proyect-name">BatataBit</h3>
-            <p class="proyect-description">Se trata de una landig page informativa, diseñada para adaptarse a cualquier dispositivo de los usuarios, utilizando fundamentos de mobile first.</p>
+            <p class="proyect-description">Desarrollo de una landing page informativa con enfoque mobile-first, garantizando una navegación rápida y fluida en cualquier dispositivo.</p>
             <button class="view-more">
               <a class='btn-view-more' href="https://lihuelm.github.io/Batatabit_MobileFirst/">Ver mas...</a>
             </button>
           </div>
 
           <div class="card-item swiper-slide">
-            <img src="assets/proyectos/proyect-CFC.png" alt="proyect-image" class="proyect-image">
-            <h3 class="proyect-name">Colegio de Fonoudiólogos de Córdoba</h3>
-            <p class="proyect-description">Sitio Web actual del Colegio de Fonoaudiólogos de Córdoba. Desarrollado con WordPress, proyecto freelance de migración de datos del sitio original y rebranding del mismo.</p>
+            <img src="assets/proyectos/proyect-moviApp.png" alt="proyect-image" class="proyect-image">
+            <h3 class="proyect-name">MovieApp</h3>
+            <p class="proyect-description">Creación de una app móvil dinámica con integración de API pública, ofreciendo una experiencia de usuario intuitiva y visualmente atractiva.</p>
             <button class="view-more">
-              <a class='btn-view-more' href="https://cfc-cordoba.org/">Ver mas...</a>
+              <a class='btn-view-more' href="https://lihuelm.github.io/MovieApp/">Ver mas...</a>
             </button>
           </div>
 
           <div class="card-item swiper-slide">
             <img src="assets/proyectos/proyect-ToDoApp.png" alt="proyect-image" class="proyect-image">
             <h3 class="proyect-name">ToDoApp</h3>
-            <p class="proyect-description">App Mobile, desarollado con React.js -en él- se trabajan funcionalidades básicas cómo: manejo del estado, de efectos, de eventos, comunicación con props y ReactContext, custom hooks, persistencia con localStorage.</p>
+            <p class="proyect-description"> Desarrollo de una app móvil en React.js con gestión avanzada de estado, efectos y persistencia de datos, optimizada para un rendimiento rápido y eficiente.</p>
             <button class="view-more">
               <a class='btn-view-more' href="https://lihuelm.github.io/ToDo_Webapp/">Ver mas...</a>
             </button>
@@ -226,14 +234,15 @@
         <div class="swiper-slide-button swiper-button-prev"></div>
         <div class="swiper-slide-button swiper-button-next"></div>
       </div>
-    </div>
+      </div>
+  </div>
   </section>
 
   <section id="contact" class="sectionContact" >
     <div class="text-contact">
       <p>Gracias por tu recorrido...</p>
       <p>¡Espero que lo hayas disfrutado tanto como yo!</p>
-      <h2>Hablamos?</h2>
+      <h2 class="title-contact">Hablamos?</h2>
     </div>
     <div class="containerContact">
       <form id="form" action="https://api.web3forms.com/submit" method="POST" class="form contact-left">
@@ -246,7 +255,7 @@
       <div class="contact-right">
         <div class="contact-item">
           <a class="iconContact" href="https://github.com/LihuelM">
-            <img class="iconContact-redes gh" src="./assets/icons/icon-github-blanco.svg" alt="">
+            <img class="iconContact-redes gh" src="./assets/icons/icon-github-blanco.svg" alt="boton-github">
           </a>
           <a class="iconContact" href="https://github.com/LihuelM">
             <p>Ir a GitHub</p>
@@ -254,7 +263,7 @@
         </div>
         <div class="contact-item">
           <a class="iconContact" href="https://www.linkedin.com/in/lihuel-muracciole/">
-            <img class="iconContact-redes ln" src="./assets/icons/icon-linkedin-blanco.svg" alt="">
+            <img class="iconContact-redes ln" src="./assets/icons/icon-linkedin-blanco.svg" alt="boton-linkedin">
           </a>
           <a class="iconContact" href="https://www.linkedin.com/in/lihuel-muracciole/">
             <p>Ir a Linkedin</p>
@@ -262,7 +271,7 @@
         </div>
         <div class="contact-item">
           <a class="iconContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/CV-Muracciole,Lihuel.pdf">
-            <img class="iconContact-redes cv" src="./assets/icons/icon-descarga-blanco.svg" alt="">
+            <img class="iconContact-redes cv" src="./assets/icons/icon-descarga-blanco.svg" alt="boton-instagram">
           </a>
           <a class="iconContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/CV-Muracciole,Lihuel.pdf">
             <p>Descargar CV </p>
@@ -275,9 +284,9 @@
   <footer>
     <div class="logo"><a href="#">LM.Dev</a></div>
     <div class="media">
-      <a href="#"><img src="./assets/icons/github_icon.png" alt="boton-github"></a>
-      <a href="#"><img src="./assets/icons/linkedin_icon.png" alt="boton-linkedin"></a>
-      <a href="#"><img src="./assets/icons/instagram_icon.png" alt="boton-instagram"></a>
+      <a href="https://github.com/LihuelM"><img class="icon-redes gh" src="./assets/icons/icon-github-blanco.svg" alt="boton-github"></a>
+      <a href="https://www.linkedin.com/in/lihuel-muracciole/"><img class="icon-redes ln" src="./assets/icons/icon-linkedin-blanco.svg" alt="boton-linkedin"></a>
+      <a href="https://www.instagram.com/lii_muracciole/"><img class="icon-redes ig" src="./assets/icons/icon-instagram-blanco.svg" alt="boton-instagram"></a>
     </div>
   </footer>
 

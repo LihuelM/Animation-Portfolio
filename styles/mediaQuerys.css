@@ -1,4 +1,34 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
+  .text-content p{
+    transform: translateY(6rem);
+  }
+  .text-container p{
+    font-size: 1.4rem;
+  }
+  .bg {
+    font-size: 8rem;
+}
+  #aboutMe{
+    width: 100vw;
+    margin-top: 4rem;
+  }
+  #aboutMe .aboutCont{
+    gap: 2rem;
+  }
+  #aboutMe h2 {
+    font-size: 4rem;
+    margin: 3rem 0rem;
+}
+  #aboutMe .imgMe{
+    width: 26rem;
+  }
+  #aboutMe .aboutText p{
+    width: 55vw;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   /* Home */
   .menu {
     display: none;
@@ -13,7 +43,7 @@
   .title {
     width: 22rem;
     height: 4rem;
-}
+  }
   .left {
     left: -26%;
     top: -50%;
@@ -93,117 +123,100 @@
   .section {
   padding: 2rem;
   }
-  .boxes-container {
-    margin-top: 2rem;
-    gap: 0rem;
+  .containerProyects .slider-wrapper {
+    margin: 0 2rem 4rem;
   }
-  .columns {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 90vw;
-    height: 100%;
-    gap: 1rem;
-  }
-  .col-2, .col-4 {
-    margin: 0rem auto 3rem;
-  }
-  .box1 .col-1, .col-3 {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    transform: translate(0px, 0px);
-    margin: 10rem 2rem 5rem 2rem;
-  }
-  .box1 .col-2 .text-box, .box1 .col-4 .text-box,
-  .box2 .col-2 .text-box {
-  width: 27rem;
-  }
-
-  .box1 .col-1 img:first-child {
-    width: 15rem;
-    height: 31rem;
-    transform: translateY(0rem);
-  }
-  .box1 .col-1 img:nth-child(2) {
-    width: 15rem;
-    height: 31rem;
-  }
-  .box1 .col-3 img:first-child {
-    height: 30rem;
-    width: 15rem;
-    transform: translate(0rem, 0rem);
-  }
-  .box1 .col-3 img:nth-child(2) {
-    width: 15rem;
-    height: 19rem;
-    transform: translate(1rem, 5rem);
-  }
-  .box1 .col-2 h2 {
-    top: 1%;
-    left: 23%;
-  }
-  .box1 .col-4 h2 {
-    left: 19%;
-    top: 49%;
-  }
-  .box1 .col-4, .box2 {
-    margin-top: 0rem;
-  }
-  .box2 .col-1, .box2 .col-3 {
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    transform: translate(0px, 0px);
-    margin: 10rem 2rem 5rem 2rem;
-  }
-  .box2 .col-1 img:first-child {
-    width: 100%;
-    height: 21rem;
-    z-index: 1;
-    transform: translate(0rem, 0rem);
-  }
-  .box2 .col-1 img:nth-child(2) {
-    width: 100%;
-    height: 21rem;
-    transform: translate(0rem, 0rem);
-  }
-  .box2 .col-2 {
-    width: 90vw;
-  }
-  .box2 .col-2 h2 {
-    left: 30%;
-    top: -14%;
-  }
-  .box2 .col-2 .text-box{
-    transform: translate(0rem, 0rem);
-    margin-top: 0rem;
+  .slider-wrapper .swiper-slide-button{
+    display: none;
   }
 
   /* Contact */
-  .contact{
-    justify-content: center;
+  
+}
+
+@media (max-width: 426px) {
+  /* Home */
+  .text-content p {
+    transform: translateY(18rem);
   }
-  .contact h3 {
+  .left-side .tv .sm.left-bottom{
+    transform: translate(-4px, -2px);
+  }
+  .left-side .tv .bg.bottom{
+    transform: translate(0px, 11px);
+  }
+  .left-side .tv .text-container{
+    transform: translate(0px, -15px);
+  }
+
+  /* About Me */
+  #aboutMe{
+    flex-wrap: nowrap;
+  }
+  #aboutMe .title-aboutMe{
     font-size: 4rem;
+    margin: 6rem 0rem 2rem;
   }
-  .text-contact p:nth-child(1){
-    max-width: 70%;
-    line-height: 1.2;
-  }
-  .text-contact p:nth-child(2){
-    letter-spacing: 0.2rem;
-    width: 80%;
-  }
-  .form {
-    width: 80%;
-    height: 60%;
-  }
-  .form-tittle{
+  #aboutMe .title-skills{
     font-size: 4rem;
+    margin: 4rem 0rem 0rem;
+  }
+  #aboutMe .skills {
+    flex-direction: column;
+    padding: 6rem;
+    gap: 6rem;
+  }
+  .skills .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
     text-align: center;
   }
-  .form label {
-    margin: 1rem;
-    text-align: center;
+  #aboutMe .container h3{
+    top: 30%;
   }
+
+  /* Proyects */
+  #proyects .title-proyects{
+    font-size: 4rem;
+    margin: 2rem 0rem 2rem;
+  }
+  .card-list .card-item{
+    height: 50rem;
+    padding: 1.5rem;
+  }
+  .card-list .card-item .proyect-image{
+    height: 27rem;
+    margin-bottom: 1rem;
+  }
+  .card-list .card-item .proyect-description{
+    margin: 1.4rem 0 1.4rem;
+  }
+
+  /* Contact */
+  .text-contact{
+    margin-top: 1rem;
+  }
+  #contact .title-contact{
+    font-size: 4rem;
+    margin: 3rem 0rem 0rem;
+  }
+  .text-contact p:nth-child(2) {
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+  }
+  .containerContact{
+    padding: 0rem;
+    margin: 3rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .contact-left{
+    align-items: center;
+  }
+  .contact-inputs{
+    width: 33rem;
+  }
+  
 }

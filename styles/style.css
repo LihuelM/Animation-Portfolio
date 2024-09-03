@@ -271,15 +271,22 @@ section {
   align-content: space-around;
   margin: auto;
 }
-#aboutMe h2{
+#aboutMe .title-aboutMe{
   font-family: w;
   font-size: 5rem;
   margin: 6rem 0rem;
+}
+#aboutMe .title-skills{
+  font-family: w;
+  font-size: 5rem;
+  margin: 8rem 0rem 0rem;
+  text-align: center;
 }
 #aboutMe h3{
   font-family: w;
   font-size: 4rem;
   margin: 6rem 0rem;
+  color: rgba(116, 155, 169, 0.5);
 }
 #aboutMe .aboutCont {
   display: flex;
@@ -296,7 +303,6 @@ section {
 }
 #aboutMe .imgMe {
   width: 30rem;
-  /* height: 35rem;  */
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -324,7 +330,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 70px 0;
 }
 .bgIconExp .imgIcon {
   height: 10rem;
@@ -346,6 +351,18 @@ footer{
   cursor: pointer;
   font-family: w;
 }
+.icon-redes.ln{
+  height: 3rem;
+}
+.icon-redes.gh{
+  opacity: 0.7;
+  height: 2.8rem;
+}
+.icon-redes.ig{
+  height: 3.189rem;
+  transform: translate(-3px, -1px)
+}
+
 
 
 

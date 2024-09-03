@@ -1,11 +1,12 @@
-#proyects h2{
+#proyects .title-proyects{
     font-family: w;
     font-size: 5rem;
     margin: 6rem 0rem 4rem;
+    text-align: center;
 }
 .sectionProyects{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -44,7 +45,7 @@
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 1px;
+    letter-spacing: .8px;
     text-align: center;
 }
 .card-list .card-item .proyect-description {
@@ -95,12 +96,4 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 768px) {
-    .slider-wrapper {
-        margin: 0 1rem 4 rem;
-    }
 
-    .slider-wrapper .swiper-slide-button{
-        display: none;
-    }
-}

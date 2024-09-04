@@ -1,9 +1,6 @@
 @media only screen and (max-width: 1024px) {
   .text-content p{
-    transform: translateY(6rem);
-  }
-  .text-container p{
-    font-size: 1.4rem;
+    transform: translateY(11rem);
   }
   .bg {
     font-size: 8rem;
@@ -18,13 +15,20 @@
   #aboutMe h2 {
     font-size: 4rem;
     margin: 3rem 0rem;
-}
+  }
   #aboutMe .imgMe{
     width: 26rem;
   }
   #aboutMe .aboutText p{
     width: 55vw;
     font-size: 1.5rem;
+  }
+
+  /* Proyects */
+  .card-list .card-item .proyect-image{
+    height: 25rem;
+    width: 25rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -38,7 +42,143 @@
     width: auto;
   }
   .navbar .media, footer .media {
-  gap: 0.5rem;
+    gap: 0.5rem;
+  }
+  .title {
+    width: 24rem;
+    height: 6rem;
+  }
+  .left {
+    left: -60%;
+    top: -10%;
+  }
+  .right {
+    top: 80%;
+    left: 100%;
+  }
+  .bg {
+    font-size: 6.5rem;
+  }
+  .sm {
+    font-size: 3.5rem;
+  }
+  .text-content p {
+    transform: translateY(25rem);
+    text-align: center;
+    letter-spacing: 0.4rem !important;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+  .v-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .tv {
+    padding: 2rem;
+  }
+  .right-side{
+    width: 10rem ;
+    height: 10rem ;
+    transform: translate(25rem, 5rem);
+  }
+  .left-side{
+    padding: 0.5rem ;
+    gap: 1rem ; 
+  }
+  .bottom{
+    transform: translate(16px, 20px);
+  }
+  .text-container p {
+    transform: translate(0px, -2rem);
+    text-align: justify;
+  }
+  .text-container  {
+    padding: 1rem;
+  }
+  .text-container p:nth-child(2) {
+    text-align: center;
+    font-size: 4rem ;
+    padding-top: 1rem;
+    line-height: .7;
+  }
+
+  /* About Me */
+  #aboutMe{
+    flex-wrap: nowrap;
+  }
+  #aboutMe .aboutText{
+    width: 100% ;
+  }
+  #aboutMe .aboutText p{
+    width: 90% ;
+  }
+  #aboutMe h2{
+    margin: 4rem 0 ;
+  }
+  .contIconosExp{
+    gap: 1.5rem ;
+    padding: 1rem ;
+    width: 100% ;
+  }
+  hr.divider {
+    margin-bottom: 2rem;
+  }
+  #aboutMe .title-skills{
+    margin: 6rem 0;
+  }
+  .skills .container {
+    width: 350px;
+    height: 350px;
+  }
+  #aboutMe .container h3{
+    top: 33%;
+  }
+
+  /* Proyects */
+  .section {
+  padding: 2rem;
+  }
+  .sectionProyects{
+    min-height: auto;
+  }
+  #proyects .title-proyects{
+    margin: 6rem 0;
+  }
+  .containerProyects .slider-wrapper {
+    margin: 0 2rem 4rem;
+  }
+  .slider-wrapper .swiper-slide-button{
+    display: none;
+  }
+
+  /* Contact */
+  .containerContact{
+    padding: 2rem 0rem;
+  }
+  .contact-inputs{
+    width: 35rem;
+  }
+  .text-contact p:nth-child(2){
+    letter-spacing: 0.4rem;
+  }
+}
+
+@media (max-width: 426px) {
+  /* Home */
+  .text-content p {
+    transform: translateY(22rem);
+  }
+  .text-container p{
+    font-size: 1.4rem;
+  }
+  .left-side .tv .sm.left-bottom{
+    transform: translate(-4px, -2px);
+  }
+  .left-side .tv .bg.bottom{
+    transform: translate(0px, 11px);
+  }
+  .left-side .tv .text-container{
+    transform: translate(0px, -15px);
   }
   .title {
     width: 22rem;
@@ -58,100 +198,13 @@
   .sm {
     font-size: 3.5rem;
   }
-  .text-content p {
-    transform: translateY(23rem);
-    text-align: center;
-    letter-spacing: 0.4rem !important;
-    font-size: 1.3rem;
-    margin-top: 2rem;
-  }
-  .v-container{
-    display: flex;
-    flex-direction: column;
-  }
-  .tv {
-    padding: 2rem;
-  }
   .right-side{
-    width: 10rem ;
-    height: 10rem ;
     transform: translate(10rem, 5rem) ;
-  }
-  .left-side{
-    padding: 0.5rem ;
-    gap: 1rem ; 
-  }
-  .bottom{
-    transform: translate(16px, 33px);
-  }
-  .text-container p {
-    transform: translate(0px, -1.5rem);
-  }
-  .text-container  {
-    padding: 1rem;
-  }
-  .text-container p:nth-child(2) {
-    text-align: center;
-    font-size: 4rem ;
-    padding-top: 1rem;
-    line-height: .7;
   }
 
   /* About Me */
   #aboutMe .aboutCont{
     flex-direction: column ;
-  }
-  #aboutMe .aboutText{
-    width: 100% ;
-  }
-  #aboutMe .aboutText p{
-    width: 90% ;
-  }
-  #aboutMe h2{
-    margin: 4rem 0 ;
-  }
-  .contIconosExp{
-    gap: 1.5rem ;
-    padding: 1rem ;
-    width: 100% ;
-  }
-  hr.divider {
-    margin-bottom: 2rem;
-  }
-
-  /* Proyects */
-  .section {
-  padding: 2rem;
-  }
-  .containerProyects .slider-wrapper {
-    margin: 0 2rem 4rem;
-  }
-  .slider-wrapper .swiper-slide-button{
-    display: none;
-  }
-
-  /* Contact */
-  
-}
-
-@media (max-width: 426px) {
-  /* Home */
-  .text-content p {
-    transform: translateY(18rem);
-  }
-  .left-side .tv .sm.left-bottom{
-    transform: translate(-4px, -2px);
-  }
-  .left-side .tv .bg.bottom{
-    transform: translate(0px, 11px);
-  }
-  .left-side .tv .text-container{
-    transform: translate(0px, -15px);
-  }
-
-  /* About Me */
-  #aboutMe{
-    flex-wrap: nowrap;
   }
   #aboutMe .title-aboutMe{
     font-size: 4rem;
@@ -167,10 +220,8 @@
     gap: 6rem;
   }
   .skills .container {
-    position: relative;
     width: 300px;
     height: 300px;
-    text-align: center;
   }
   #aboutMe .container h3{
     top: 30%;
@@ -179,7 +230,7 @@
   /* Proyects */
   #proyects .title-proyects{
     font-size: 4rem;
-    margin: 2rem 0rem 2rem;
+    margin: 2rem 0rem 3rem;
   }
   .card-list .card-item{
     height: 50rem;
@@ -218,5 +269,11 @@
   .contact-inputs{
     width: 33rem;
   }
-  
+  .contact-right {
+    height: auto;
+  }
+  .contact-right .contact-item:nth-child(1),
+  .contact-right .contact-item:nth-child(2) {
+      display: none;
+  }
 }

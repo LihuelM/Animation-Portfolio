@@ -111,23 +111,15 @@
 .contact-inputs:hover{
     background-color: #cdd2da;
 }
-.contact-item:hover .iconContact{
-    color: #141414;
-}
-.contact-item:hover img.gh {
-    content: url('/assets/icons/icon-github-negro.svg'); 
-    opacity: 0.9;
+
+.contact-item:hover .iconContact { 
+    color: #141414; 
 }
 
-.contact-item:hover img.ln {
-    content: url('/assets/icons/icon-linkedin-negro.svg');
-    opacity: 0.9;
-}
+.contact-item:hover img.gh { filter: invert(1) brightness(0.9) contrast(1.1); }
+.contact-item:hover img.ln { filter: invert(1) brightness(0.9) contrast(1.1); opacity: 0.8; }
+.contact-item:hover img.cv { filter: invert(1) brightness(0.9) contrast(1); opacity: 0.65; }
 
-.contact-item:hover img.cv {
-    content: url('/assets/icons/icon-descarga-negro.svg');
-    opacity: 0.7;
-}
 .iconContact-redes{
     padding: 1rem;
     height: 5rem;

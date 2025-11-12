@@ -31,6 +31,8 @@ body {
   width: 100vw;
   border-bottom: 1px solid rgba(255, 255, 255, .1);
   z-index: 1000;
+  background: transparent;
+  transition: background-color 200ms ease, border-color 200ms ease, backdrop-filter 200ms ease;
 }
 .navbar .animation-nav {
   position: absolute;
@@ -48,6 +50,19 @@ body {
   100% {
     left: 100%;
     transform: translate(0%);
+  }
+}
+
+.navbar.navbar--scrolled {
+  background: rgba(20, 20, 20, 0.25);       
+  border-bottom-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);    
+}
+
+@supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+  .navbar.navbar--scrolled {
+    background: rgba(20, 20, 20, 0.75);
   }
 }
 .menu li {

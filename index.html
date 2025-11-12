@@ -278,10 +278,10 @@
           </a>
         </div>
         <div class="contact-item">
-          <a class="iconContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/CV-Muracciole,Lihuel.pdf">
+          <a class="iconContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/Muracciole, Lihuel -CV-ES.pdf">
             <img class="iconContact-redes cv" src="./assets/icons/icon-descarga-blanco.svg" alt="boton-instagram">
           </a>
-          <a class="iconContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/CV-Muracciole,Lihuel.pdf">
+          <a class="iconContact" download="CV_Lihuel_Muracciole.pdf" href="./assets/Muracciole, Lihuel -CV-ES.pdf">
             <p>Descargar CV </p>
           </a>
         </div>
@@ -300,6 +300,20 @@
 
 </body>
 
+<script>
+  (function () {
+    const nav = document.querySelector('.navbar');
+    const onScroll = () => {
+      if (window.scrollY > 8) {
+        nav.classList.add('navbar--scrolled');
+      } else {
+        nav.classList.remove('navbar--scrolled');
+      }
+    };
+    onScroll(); // estado correcto si recarga en medio de la página
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>

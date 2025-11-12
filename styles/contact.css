@@ -57,7 +57,7 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: .8rem;
   padding: 2rem;
-  color: #cdd2da;
+  color: #727272;
 }
 .contact-inputs:focus {
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -71,7 +71,7 @@
     padding-top: 1.5rem;
     border-radius: .8rem;
     font-family: 'Lato', sans-serif;
-    color: #cdd2da;
+     color: #727272;
 }
 .contact-btn {
     padding: 1rem 3.5rem;

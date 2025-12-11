@@ -41,7 +41,10 @@
     border-color 0.2s ease,
     opacity 0.2s ease;
   opacity: 0.9;
+  overflow: hidden;
 }
+
+
 
 .skill-card img {
   object-fit: contain;

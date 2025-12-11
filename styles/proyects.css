@@ -1,99 +1,202 @@
-#proyects .title-proyects{
-    font-family: w;
-    font-size: 5rem;
-    margin: 6rem 0rem 4rem;
-    text-align: center;
-}
-.sectionProyects{
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+/* ===========================
+   Últimos Proyectos – Flip Cards
+   =========================== */
+
+#proyects .title-proyects {
+  font-family: w;
+  font-size: 5rem;
+  margin: 6rem 0 4rem;
+  text-align: center;
 }
 
-.slider-wrapper{
-    overflow: hidden;
-    max-width: 1200px;
-    margin: 0 7rem 5.5rem;
+/* Contenedor general */
+.projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 6rem;
 }
 
-.card-list .card-item{
-    /* width: 40rem; */
-    height: 60rem;
-    user-select: none;
-    padding: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.09);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.card-list .card-item .proyect-image{
-    height: 30rem;
-    width: 30rem;
-    margin-bottom: 3rem;
-    border: 1px solid #fff;
-    padding: .4rem;
-    border-radius: 8px;
-    background-color: #000;
-}
-.card-list .card-item .proyect-name {
-    font-size: 1.7rem;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: .8px;
-    text-align: center;
-}
-.card-list .card-item .proyect-description {
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 1.4rem 0 3rem;
-    text-align: justify;
+/* Grid de cards */
+.projects-grid {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.4rem;
+  padding: 0 3rem;
 }
 
-.card-list .card-item .view-more {
-    padding: 1rem 3.5rem;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #cdd2da;
-    border: 1px solid transparent;
-    transition: 0.2s ease;
+/* Card base con perspectiva 3D */
+.project-card {
+  perspective: 1400px;
 }
 
-.card-list .card-item .view-more:hover {
-    background-color: rgba(255, 255, 255, 0.09);
-    border: 1px solid #fff;
+/* Contenedor interno que rota */
+.project-card-inner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 3; /* rectángulo tipo mockup */
+  transform-style: preserve-3d;
+  transition: transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+  cursor: pointer;
 }
 
-.card-list .card-item .view-more:hover .btn-view-more {
-    color: #cdd2da;
+/* Caras */
+.project-card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 2.2rem;
+  overflow: hidden;
+  backface-visibility: hidden;
+
+  /* fondo tipo botón glassmorphism */
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65);
 }
 
-.btn-view-more{
-    font-size: 1.25rem;
-    color: #030728;
-    font-weight: 500;
+/* Frente: solo imagen */
+.project-card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.slider-wrapper .swiper-pagination-bullet {
-    background-color: #cdd2da;
-    height: 1.5rem;
-    width: 1.5rem;
+.project-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.slider-wrapper .swiper-slide-button{
-    color: #cdd2da;
-    margin-top: -5rem;
-    transition: 0.2s ease;
+/* Dorso: info + botón */
+.project-card-back {
+  padding: 2.4rem 2.6rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
 }
 
-.slider-wrapper .swiper-slide-button:hover{
-    color: rgba(255, 255, 255, 0.5);
+.project-title {
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 1.4rem;
+}
+
+.project-text {
+  font-size: 1.45rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 2.2rem;
+  text-align: center;
+}
+
+/* Botón tipo el resto del portfolio */
+.project-link {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 2.8rem;
+  color: #cdd2da;
+  font-size: 1.35rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  border-radius: .8rem;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.project-link:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #cdd2da;
+  transform: translateY(-1px);
+}
+
+/* Hover flip (desktop / dispositivos con hover) */
+@media (hover: hover) {
+  .project-card:hover .project-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Flip por clase (scroll en mobile) */
+.project-card:hover .project-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Flip por clase (scroll / mobile) */
+.project-card-inner.is-flipped {
+  transform: rotateY(180deg);
 }
 
 
+/* ===========================
+   Responsive
+   =========================== */
+
+/* 1024px – 901px → 3 columnas más compactas */
+@media (max-width: 1024px) and (min-width: 901px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 1.8rem;
+    gap: 1.8rem;
+  }
+
+  .project-card-inner {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* 900px – 501px → 2 columnas */
+@media (max-width: 900px) and (min-width: 501px) {
+  #proyects .title-proyects {
+    font-size: 4.2rem;
+    margin: 5rem 0 3.4rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 2rem 4rem;
+    gap: 2rem;
+  }
+
+  .project-card-inner {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ≤ 500px → 1 columna (mobile) */
+@media (max-width: 500px) {
+  #proyects .title-proyects {
+    font-size: 3.4rem;
+    margin: 4.4rem 0 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.6rem 4rem;
+    gap: 1.8rem;
+  }
+
+  .project-card-inner {
+    aspect-ratio: 4 / 3;
+    transition: transform 1.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .project-card-back {
+    padding: 2rem 2.1rem 2.4rem;
+  }
+
+  .project-text {
+    font-size: 1.4rem;
+  }
+}

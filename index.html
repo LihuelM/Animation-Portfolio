@@ -97,25 +97,24 @@
 
   <section id="aboutMe">
     <h2 class="title-aboutMe">Acerca de mí</h2>
-    <div class="aboutCont">
-      <div class="contenedor_imagen">
-        <img class="imgMe" src="./assets/foto-perfil.png" alt="Lihuel Muracciole">
-      </div>
+    <div class="about-content">
       <div class="aboutText">
-        <p>Actualmente trabajo en una empresa especializada en la gestión integral de eCommerce, 
-          manejando plataformas como VTEX, PrestaShop, WordPress, entre otras.<br> 
-        <br> Mi rol principal hoy, es brindar soporte técnico en el frontend, donde desarrollo y 
-          optimizo la parte visual, la estructural de sitios y aplicaciones web, mejorando la 
-          usabilidad y la experiencia del usuario.
-          Desde la gestión, ejecución y validación de requerimientos en cada proyecto, me aseguro 
-          que se desarrollen de manera eficiente y cumplan con los estándares de calidad en las etapas frontend.<br>
-        <br> Mi experiencia incluye el desarrollo de interfaces de usuario (UI), 
-        la integración de APIs, y la construcción de estructuras lógicas para aplicaciones web. 
-        Disfruto el proceso de transformar ideas, utilizando tecnologías como React Js, JavaScript, HTML y CSS, 
-        en resultados eficientes y bien estructurados que aportan valor tangible al proyecto.<br>
-        <br>Estoy siempre en busca de nuevos desafíos, que me permitan seguir creciendo en este campo en constante evolución.<br> 
-        </p>
+        <p>
+  Soy Frontend Developer con orientación en UI/UX, enfocada en crear experiencias digitales claras, funcionales y visualmente cuidadas. <br><br>
+  Durante los últimos años trabajé tanto en proyectos de eCommerce, como en migraciones y aplicaciones digitales, utilizando plataformas como VTEX, PrestaShop y WordPress, en distintos contextos, equipos y etapas de desarrollo. <br><br>
+  A lo largo de mi recorrido participé en tareas de soporte y desarrollo frontend, optimización visual y estructural de sitios, y mejora continua de la usabilidad. Me involucro tanto en la definición y validación de requerimientos como en la ejecución técnica, cuidando que cada entrega esté alineada con los objetivos del proyecto. 
+  También cuento con experiencia en desarrollo de interfaces, diseño web, integración de APIs y construcción de estructuras lógicas para aplicaciones web. <br><br> Disfruto transformar ideas en soluciones concretas, combinando diseño, lógica y código. <br>
+</p>
+
       </div>
+      <div class="about-avatarWrap">
+        <img class="imgMe" src="./assets/photo-perfil_transparent.png" alt="Lihuel Muracciole">
+        <span class="about-orbit about-orbit--a"></span>
+        <span class="about-orbit about-orbit--b"></span>
+        <span class="about-orbit about-orbit--c"></span>
+      </div>
+
+      
     </div>
     
     <h2 class="title-skills">Lenguajes y Herramientas</h2>
@@ -216,7 +215,7 @@
 
     <div class="projects-section">
       <div class="projects-grid">
-
+        
         <!-- Fullkom -->
         <article class="project-card">
           <div class="project-card-inner">
@@ -229,6 +228,45 @@
                 Participé junto a un equipo multidisciplinario en la creación del sitio corporativo de Fullkom, desarrollado con HTML, CSS y JS. El proyecto destaca por su diseño responsivo e interacción visual atractiva.
               </p>
               <a class="project-link" href="https://fullkom.com/" target="_blank" rel="noopener noreferrer">
+                Ver más
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- remotivate -->
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-face project-card-front">
+              <img src="assets/proyectos/proyect-remotivate.png" alt="Sitio corporativo remotivate">
+            </div>
+            <div class="project-card-face project-card-back">
+              <h3 class="project-title">Remotivate</h3>
+              <p class="project-text">
+                Remotivate es una guía interactiva pensada para acompañar a quienes quieren rediseñar su vida profesional y acercarse al trabajo remoto.
+                Me encargué del proceso completo: investigación, arquitectura de contenido, diseño de interfaces y desarrollo frontend con HTML, CSS y JavaScript.
+                Un proyecto personal end-to-end donde pude integrar propósito, creatividad y código.
+              </p>
+              <a class="project-link" href="https://remotivate.site/" target="_blank" rel="noopener noreferrer">
+                Ver más
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- strakoms -->
+        <article class="project-card">
+          <div class="project-card-inner">
+            <div class="project-card-face project-card-front">
+              <img src="assets/proyectos/proyect-starkoms.png" alt="Sitio corporativo strakoms">
+            </div>
+            <div class="project-card-face project-card-back">
+              <h3 class="project-title">StarkOMS</h3>
+              <p class="project-text">
+                Starkoms es un sitio corporativo desarrollado en WordPress, donde colaboré junto al equipo de TI en la implementación, personalización y optimización visual del proyecto.
+Trabajé utilizando Elementor, ajustes avanzados de CSS, integración de plugins clave —incluyendo herramientas de traducción multilenguaje— y mejoras en la estructura de navegación y experiencia del usuario.
+              </p>
+              <a class="project-link" href="https://www.starkoms.com/" target="_blank" rel="noopener noreferrer">
                 Ver más
               </a>
             </div>
@@ -418,20 +456,6 @@
 </script>
 <script>
   (function () {
-    const nav = document.querySelector('.navbar');
-    const onScroll = () => {
-      if (window.scrollY > 8) {
-        nav.classList.add('navbar--scrolled');
-      } else {
-        nav.classList.remove('navbar--scrolled');
-      }
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  })();
-
-  // Flip de cards según scroll (centro de pantalla) en mobile
-  (function () {
     const MOBILE_MAX_WIDTH = 500;
 
     let cards = [];
@@ -515,25 +539,27 @@
   })();
 </script>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    if (typeof gsap === 'undefined') return;
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
 
-    gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-    const cards = document.querySelectorAll('.skill-card');
-    if (!cards.length) return;
+  const cards = document.querySelectorAll('.skill-card');
+  if (!cards.length) return;
 
-    // Estado inicial (desorden suave)
+  // --- Estados ---
+  function setHiddenState() {
     gsap.set(cards, {
       opacity: 0,
       y: 70,
-      x: function () { return gsap.utils.random(-40, 40); },
-      rotation: function () { return gsap.utils.random(-8, 8); },
+      x: () => gsap.utils.random(-40, 40),
+      rotation: () => gsap.utils.random(-8, 8),
       scale: 0.9,
       transformOrigin: 'center center'
     });
+  }
 
-    // Animación de entrada al hacer scroll
+  function playIn() {
     gsap.to(cards, {
       opacity: 1,
       y: 0,
@@ -544,18 +570,32 @@
       duration: 1.1,
       stagger: {
         each: 0.06,
-        from: 'center',   // se acomodan desde el centro hacia afuera
+        from: 'center',
         ease: 'power3.out'
-      },
-      scrollTrigger: {
-        trigger: '.skills-grid-wrapper',
-        start: 'top 80%',
-        end: 'top 30%',
-        toggleActions: 'play none none reverse' // al subir, se desarma suave
       }
     });
+  }
+
+  // Estado inicial: oculto
+  setHiddenState();
+
+  ScrollTrigger.create({
+    trigger: '.skills-grid-wrapper',
+    start: 'top 80%',
+    end: 'bottom 20%',
+    onEnter: () => playIn(),
+    onEnterBack: () => playIn(),
+    onLeave: () => setHiddenState(),
+    onLeaveBack: () => setHiddenState()
   });
+});
 </script>
+
+
+
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

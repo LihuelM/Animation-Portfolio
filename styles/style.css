@@ -291,12 +291,6 @@ section {
   font-size: 5rem;
   margin: 6rem 0rem;
 }
-#aboutMe .title-skills{
-  font-family: w;
-  font-size: 5rem;
-  margin: 8rem 0rem 0rem;
-  text-align: center;
-}
 #aboutMe h3{
   font-family: w;
   font-size: 4rem;
@@ -311,6 +305,11 @@ section {
   gap: 5rem;
   
 }
+.about-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
 #aboutMe .contenedor_imagen {
   display: flex;
   justify-content: center;
@@ -321,6 +320,85 @@ section {
   -o-object-fit: cover;
   object-fit: cover;
 }
+.about-avatarWrap{
+  position: relative;
+  width: 360px;  
+  height: 360px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+}
+.about-avatarImg{
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.about-orbit{
+  position: absolute;
+  inset: -25px;
+  border-radius: 999px;
+  z-index: 3;
+  pointer-events: none;
+  will-change: transform;
+  animation: orbitSpin 14s linear infinite;
+
+  border: 1.5px solid rgba(255,255,255,0.22);
+  box-shadow: 0 0 18px rgba(255,255,255,0.08);
+}
+.about-orbit::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+
+  /* esto lo deja “montado” sobre la línea */
+  transform: translate(-50%, -50%);
+
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 18px rgba(255,255,255,0.28);
+}
+.about-orbit--a { animation-delay: 0s; }
+.about-orbit--b { animation-delay: -4s; }
+.about-orbit--c { animation-delay: -9s; }
+
+.about-orbit--a{
+  --tilt: -18deg;
+  --sy: 0.72;
+  animation-duration: 14s;
+  animation-direction: normal;
+}
+.about-orbit--b{
+  --tilt: 24deg;
+  --sy: 0.62;
+  opacity: 0.55;
+  border-color: rgba(255,255,255,0.18);
+  box-shadow: 0 0 22px rgba(255,255,255,0.06);
+  animation-duration: 20s;
+  animation-direction: reverse;
+}
+.about-orbit--c{
+  --tilt: -8deg;
+  --sy: 0.80;
+  opacity: 0.38;
+  border-color: rgba(255,255,255,0.14);
+  box-shadow: 0 0 26px rgba(255,255,255,0.05);
+  animation-duration: 28s;
+  animation-direction: normal;
+}
+@keyframes orbitSpin{
+  from { transform: rotate(var(--tilt, 0deg)) scaleY(var(--sy, 1)) rotate(0deg); }
+  to   { transform: rotate(var(--tilt, 0deg)) scaleY(var(--sy, 1)) rotate(360deg); }
+}
+
+
 #aboutMe .aboutText {
   display: flex;
   flex-direction: column;
@@ -340,11 +418,16 @@ section {
   opacity: .8;
   font-weight: 300;
 }
-
 #aboutMe .skills{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#aboutMe .title-skills{
+  font-family: w;
+  font-size: 5rem;
+  margin: 8rem 0rem 0rem;
+  text-align: center;
 }
 .bgIconExp .imgIcon {
   height: 10rem;
@@ -377,7 +460,5 @@ footer{
   height: 3.189rem;
   transform: translate(-3px, -1px)
 }
-
-
 
 

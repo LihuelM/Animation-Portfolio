@@ -36,7 +36,7 @@
 .project-card-inner {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 3; /* rectángulo tipo mockup */
+  aspect-ratio: 3 / 3; 
   transform-style: preserve-3d;
   transition: transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
   cursor: pointer;
@@ -84,7 +84,7 @@
 .project-title {
   font-size: 1.9rem;
   font-weight: 500;
-  text-align: left;
+  text-align: center;
   margin-bottom: 1.4rem;
 }
 
@@ -143,7 +143,6 @@
    Responsive
    =========================== */
 
-/* 1024px – 901px → 3 columnas más compactas */
 @media (max-width: 1024px) and (min-width: 901px) {
   .projects-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -152,11 +151,17 @@
   }
 
   .project-card-inner {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 4;
+  }
+  .project-text {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 2.1rem;
+    text-align: center;
   }
 }
 
-/* 900px – 501px → 2 columnas */
 @media (max-width: 900px) and (min-width: 501px) {
   #proyects .title-proyects {
     font-size: 4.2rem;
@@ -170,11 +175,9 @@
   }
 
   .project-card-inner {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 4;
   }
 }
-
-/* ≤ 500px → 1 columna (mobile) */
 @media (max-width: 500px) {
   #proyects .title-proyects {
     font-size: 3.4rem;
@@ -183,17 +186,16 @@
 
   .projects-grid {
     grid-template-columns: 1fr;
-    padding: 0 1.6rem 4rem;
     gap: 1.8rem;
   }
 
   .project-card-inner {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 4;
     transition: transform 1.3s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 
   .project-card-back {
-    padding: 2rem 2.1rem 2.4rem;
+    padding: 0rem 2rem;
   }
 
   .project-text {

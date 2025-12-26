@@ -6,8 +6,13 @@
     font-size: 8rem;
 }
   #aboutMe{
-    width: 100vw;
-    margin-top: 4rem;
+    width: 92vw;
+  }
+  .about-content{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
   }
   #aboutMe .aboutCont{
     gap: 2rem;
@@ -19,9 +24,14 @@
   #aboutMe .imgMe{
     width: 26rem;
   }
-  #aboutMe .aboutText p{
-    width: 55vw;
-    font-size: 1.5rem;
+   #aboutMe .aboutText p{
+    width: 52vw;       
+    font-size: 1.55rem;
+    line-height: 1.55;
+  }
+  .about-avatarWrap{
+    width: 280px;
+    height: 280px;
   }
 
   /* Proyects */
@@ -162,11 +172,41 @@
     letter-spacing: 0.4rem;
   }
 }
+/* =========================
+   MOBILE (<= 600px)
+========================= */
+@media (max-width: 600px) {
+  #aboutMe{
+    width: 92vw;
+  }
 
+  .about-content{
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 6rem;
+  }
+
+  #aboutMe .aboutText{
+    width: 100%;
+  }
+
+  #aboutMe .aboutText p{
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.55;
+    text-align: left;  
+  }
+
+  .about-avatarWrap{
+    width: 240px;
+    height: 240px;
+  }
+}
 @media (max-width: 426px) {
   /* Home */
   .text-content p {
-    transform: translateY(22rem);
+    transform: translateY(19rem);
   }
   .text-container p{
     font-size: 1.4rem;

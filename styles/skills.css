@@ -125,7 +125,7 @@
 
 @media (max-width: 480px) {
   .skills-grid {
-    grid-template-columns: repeat(6, minmax(52px, 1fr));
+    grid-template-columns: repeat(6, minmax(50px, 1fr));
     gap: .75rem;
     padding-inline: .9rem;
   }

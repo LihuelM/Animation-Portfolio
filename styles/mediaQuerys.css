@@ -193,14 +193,15 @@
 
   #aboutMe .aboutText p{
     width: 100%;
-    font-size: 1.5rem;
-    line-height: 1.55;
-    text-align: left;  
+    text-align: center;  
   }
 
   .about-avatarWrap{
     width: 240px;
     height: 240px;
+  }
+   #aboutMe .imgMe{
+    width: 20rem;
   }
 }
 @media (max-width: 426px) {

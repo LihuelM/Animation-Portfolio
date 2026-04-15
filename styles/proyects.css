@@ -1,8 +1,9 @@
 /* ===========================
-   Últimos Proyectos – Flip Cards
+  Proyectos – Flip Cards
    =========================== */
 
-#proyects .title-proyects {
+#proyects .title-proyects,
+#design .title-proyects {
   font-family: w;
   font-size: 5rem;
   margin: 6rem 0 4rem;
@@ -14,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 0 6rem;
+  padding: 2rem 0 6rem;
 }
 
 /* Grid de cards */
@@ -27,12 +28,10 @@
   padding: 0 3rem;
 }
 
-/* Card base con perspectiva 3D */
 .project-card {
   perspective: 1400px;
 }
 
-/* Contenedor interno que rota */
 .project-card-inner {
   position: relative;
   width: 100%;
@@ -50,7 +49,6 @@
   overflow: hidden;
   backface-visibility: hidden;
 
-  /* fondo tipo botón glassmorphism */
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(24px);
@@ -58,7 +56,6 @@
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65);
 }
 
-/* Frente: solo imagen */
 .project-card-front {
   display: flex;
   align-items: center;
@@ -71,7 +68,6 @@
   object-fit: cover;
 }
 
-/* Dorso: info + botón */
 .project-card-back {
   padding: 2.4rem 2.6rem 2.8rem;
   display: flex;
@@ -96,7 +92,6 @@
   text-align: center;
 }
 
-/* Botón tipo el resto del portfolio */
 .project-link {
   align-self: center;
   display: inline-flex;
@@ -128,12 +123,10 @@
   }
 }
 
-/* Flip por clase (scroll en mobile) */
 .project-card:hover .project-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Flip por clase (scroll / mobile) */
 .project-card-inner.is-flipped {
   transform: rotateY(180deg);
 }
@@ -149,7 +142,6 @@
     padding: 0 1.8rem;
     gap: 1.8rem;
   }
-
   .project-card-inner {
     aspect-ratio: 4 / 4;
   }
@@ -160,8 +152,12 @@
     margin-bottom: 2.1rem;
     text-align: center;
   }
+  .section-intro{
+    max-width: 72%;
+    font-size: 1.7rem;
+    margin-bottom: 2.8rem;
+  }
 }
-
 @media (max-width: 900px) and (min-width: 501px) {
   #proyects .title-proyects {
     font-size: 4.2rem;
@@ -183,22 +179,35 @@
     font-size: 3.4rem;
     margin: 4.4rem 0 3rem;
   }
-
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 1.8rem;
   }
-
   .project-card-inner {
     aspect-ratio: 4 / 4;
     transition: transform 1.3s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
-
   .project-card-back {
     padding: 0rem 2rem;
   }
-
   .project-text {
     font-size: 1.4rem;
   }
+   .section-intro{
+    max-width: 88%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+  }
 }
+
+.section-intro{
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin: 0 auto 3.2rem;
+  opacity: .8;
+  font-weight: 300;
+  max-width: 60%;
+  text-align: center;
+}
+

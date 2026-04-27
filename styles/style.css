@@ -310,6 +310,9 @@ section {
   justify-content: space-between;
   gap: 5rem;
 }
+.aboutText p {
+  white-space: pre-line;
+}
 #aboutMe .contenedor_imagen {
   display: flex;
   justify-content: center;
@@ -461,4 +464,44 @@ footer{
   transform: translate(-3px, -1px)
 }
 
+/* Switch */
+.lang-switch {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.lang-label {
+  opacity: 0.75;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  opacity: 0.55;
+  padding: 4px 6px;
+  transition: opacity 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.75);
+  transform: translateY(-1px);
+}
+
+.lang-separator {
+  opacity: 0.35;
+}
 

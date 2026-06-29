@@ -39,6 +39,9 @@ const translations = {
     "design.gallery": "Experiencia inmersiva enfocada en narrativa visual, animaciones y composición estética para transmitir sensaciones a través del diseño.",
     "design.remotivate": "Proyecto personal enfocado en UX, arquitectura de contenido y diseño de interfaces como guía visual para explorar el trabajo remoto.",
     "design.portfolio": "Mi punto de partida en frontend. Proyecto que refleja la evolución hacia interfaces más pensadas y cuidadas.",
+    "design.layerstudio": "Plataforma modular para la gestión de negocios: presupuesto, facturación, stock y eCommerce desde un solo lugar. Diseño y desarrollo de una experiencia visual moderna, con navegación por secciones, animaciones e interacciones que transmiten una identidad tecnológica y cercana.",
+    "design.estudioalvarez": "Sitio institucional para un estudio jurídico-contable. Diseño y desarrollo enfocado en transmitir confianza y profesionalismo, con una estructura clara de servicios, identidad visual sobria e integración directa de contacto.",
+    "design.quoteforge": "Landing de un SaaS para crear, enviar y dar seguimiento a presupuestos profesionales. Diseño de una experiencia centrada en la conversión, con demo interactiva, planes y una narrativa visual que comunica simplicidad y rapidez.",
 
     "contact.thanks": "Gracias por tu recorrido...",
     "contact.enjoy": "¡Espero que lo hayas disfrutado tanto como yo!",
@@ -88,6 +91,9 @@ const translations = {
     "design.gallery": "Experiência imersiva focada em narrativa visual, animações e composição estética para transmitir sensações através do design.",
     "design.remotivate": "Projeto pessoal focado em UX, arquitetura de conteúdo e design de interfaces como guia visual para explorar o trabalho remoto.",
     "design.portfolio": "Meu ponto de partida no frontend. Projeto que mostra a evolução para interfaces mais pensadas e bem construídas.",
+    "design.layerstudio": "Plataforma modular para a gestão de negócios: orçamento, faturamento, estoque e eCommerce em um só lugar. Design e desenvolvimento de uma experiência visual moderna, com navegação por seções, animações e interações que transmitem uma identidade tecnológica e próxima.",
+    "design.estudioalvarez": "Site institucional para um escritório jurídico-contábil. Design e desenvolvimento voltados a transmitir confiança e profissionalismo, com uma estrutura clara de serviços, identidade visual sóbria e integração direta de contato.",
+    "design.quoteforge": "Landing de um SaaS para criar, enviar e acompanhar orçamentos profissionais. Design de uma experiência focada na conversão, com demo interativa, planos e uma narrativa visual que comunica simplicidade e rapidez.",
 
     "contact.thanks": "Obrigada pela visita...",
     "contact.enjoy": "Espero que tenha gostado tanto quanto eu!",
@@ -137,6 +143,9 @@ const translations = {
     "design.gallery": "Immersive experience focused on visual storytelling, animations, and aesthetic composition to convey emotions through design.",
     "design.remotivate": "Personal project focused on UX, content architecture, and interface design as a visual guide to explore remote work.",
     "design.portfolio": "My starting point in frontend. A project that reflects my evolution towards more thoughtful and refined interfaces.",
+    "design.layerstudio": "Modular platform for business management: quoting, invoicing, inventory, and eCommerce all in one place. Design and development of a modern visual experience, with section-based navigation, animations, and interactions that convey a tech-driven yet approachable identity.",
+    "design.estudioalvarez": "Institutional website for a legal and accounting firm. Design and development focused on conveying trust and professionalism, with a clear service structure, an understated visual identity, and direct contact integration.",
+    "design.quoteforge": "Landing page for a SaaS to create, send, and track professional quotes. Design of a conversion-focused experience, with an interactive demo, pricing plans, and a visual narrative that communicates simplicity and speed.",
 
     "contact.thanks": "Thanks for visiting...",
     "contact.enjoy": "I hope you enjoyed it as much as I did!",
